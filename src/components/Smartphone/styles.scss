@@ -1,8 +1,112 @@
-#cell{
+#cell {
   height: 62rem;
-  width:37.5rem;
+  width: 37.5rem;
+  padding:0 3.2rem;
+
   background-color: white;
 
   box-shadow: 99px 30px 200px -40px rgba(0, 0, 0, 0.1);
   border-radius: 40px;
+
+  .header-smartphone {
+
+    height: 8.7rem;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    span {
+      margin-left: 35%;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 170%;
+    }
+
+
+  }
+
+  .menu-smartphone {
+    display: flex;
+    align-items: center;
+
+    ul {
+      width: 100%;
+      display: flex;
+
+      justify-content: space-evenly;
+
+      li:first-child {
+        color: #1E1F3D;
+      }
+
+      li {
+        display: block;
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 135%;
+
+        color: #8F8F9E;
+      }
+    }
+  }
+  .main-content{
+    margin-top: 2.4rem;
+    width: 100%;
+    
+    .add-cart{
+      border: 1px dashed #BDBDBD;
+
+      padding:1.3rem 0;
+      margin-top:3rem;
+
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 170%;
+      color:#4F4F4F;
+
+      border-radius: 5px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      -o-border-radius: 5px;
+      
+    }
+
+    .delivery-smartphone{
+      border-top:1px solid #E0E0E0;
+      margin-top:2.4rem;
+      padding-top: 2.4rem;
+
+      display:flex;
+      flex-direction: column;
+      gap:1.6rem;
+      .point-info{
+        display:flex;
+        align-items: center;
+        gap:0.8rem;
+
+        .block{
+          background-color:#F2F2F2;
+          padding:1.2rem;
+          
+          border-radius: 8px;
+          -webkit-border-radius: 8px;
+          -moz-border-radius: 8px;
+          -ms-border-radius: 8px;
+          -o-border-radius: 8px;
+}
+
+        span{
+          font-weight: 400;
+          font-size: 1.4rem;
+          line-height: 115%;
+          color:#1E1F3D;
+        }
+      }
+    }
+  }
+  
 }

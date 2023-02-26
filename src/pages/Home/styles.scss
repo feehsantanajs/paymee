@@ -1,79 +1,199 @@
+
 #background-top {
 
   width: 100%;
   height: 97.9rem;
   background: linear-gradient(116.22deg, #E0784B 0%, #FF7347 22.47%, #E8AB4F 46.94%, #FEA827 69.91%, #FE471B 95.88%);
-  position: relative;
+ 
 
-  main {
-    padding: 7.5rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    .base-title {
+  main{
+    position:relative;
+    
+    #top-header {
+      padding: 7.5rem;
       display: flex;
-      flex-direction: column;
-      gap:5.4rem;
-
-      .title-highlight {
-        h5:first-child {
-          font-weight: 700;
-          font-size: 1.6rem;
-          line-height: 1.9rem;
-
-          color: rgba(255, 255, 255, 0.5);
+      justify-content: space-between;
+      align-items: center;
+  
+      .base-title {
+        display: flex;
+        flex-direction: column;
+        gap:5.4rem;
+  
+        .title-highlight {
+          h5:first-child {
+            font-weight: 700;
+            font-size: 1.6rem;
+            line-height: 1.9rem;
+  
+            color: rgba(255, 255, 255, 0.5);
+          }
+  
+          h1 {
+            font-weight: 600;
+            font-size: 6rem;
+            line-height: 7rem;
+            color: white;
+  
+            span {
+              color: #1E1F35;
+            }
+          }
+  
+          h5 {
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: white;
+          }
         }
+        .about-acess {
+          margin-top:2.4rem;
+        }
+  
+        .info-accept-qty{
+          display:flex;
+          
+          align-items: center;
+          gap:15rem;
+          height:7.8rem;
+  
+          font-weight: 700;
+          font-size: 1.4rem;
+          line-height: 120%;
+  
+          color:white;
+          .ellipses{
+            position:relative;
+            img{
+              position:absolute;
+              
+              border-radius: 100%;
+              
+              top:-3.2rem;
+  
+              &:last-child{
+                left:8rem;
+              }
+  
+              &:nth-child(2){
+                left:4rem;
+              }
+  
+              
+            }
+          }
+          
+        }
+      }
+  
+      .base-cell {
+        width: 100%;
+  
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    #down-part{
+    
+     position:absolute;
+     width:100%;
+     top:64rem;
+      #stamp-container {
+     
+        padding: 7.5rem;
+        
+        bottom: 0rem;
+        width: 100%;
+        height: 26.65rem;
+        clip-path: polygon(50% 0, 100% 28%, 100% 100%, 0 100%, 0 28%);
+    
+        background-color: white;
+    
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        
+        img {
+          margin-top: 5rem;
+        }
+      }
+      #about-paymee{
+        padding: 7.5rem;
+        padding-top:2.7rem;
+        font-weight: 700;
 
-        h1 {
-          font-weight: 600;
-          font-size: 6rem;
-          line-height: 7rem;
-          color: white;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-          span {
-            color: #1E1F35;
+        .description-about{
+          width:66.9rem;
+          display: flex;
+          flex-direction: column;
+          gap:1.6rem;
+          text-align: center;
+          h5{
+            color: #FF481C;
+            
+            font-size: 1.6prem;
+            line-height: 2.5prem;
+          }
+          p{
+            color:var(--blue-500);
+            font-size: 4.8rem;
+            line-height: 5rem;
+          }
+          span{
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 2.5rem;
+            color: #575757;
           }
         }
 
-        h5 {
-          font-weight: 400;
-          font-size: 2rem;
-          line-height: 2.5rem;
-          color: white;
+        .info-relevant-blocks{
+          margin-top:8rem;
+          width:100%;
+          display:flex;
+          justify-content: space-between;
+
+          .block{
+            width:24.2rem;
+            img{
+              padding:1rem;
+            }
+            p{
+              color:var(--blue-500);
+              font-weight: 700;
+              font-size: 2rem;
+              line-height: 2rem;
+              span{
+                display:inline;
+              }
+            }
+            span{
+              display:block;
+
+              color:var(--gray-500);
+              font-weight: 400;
+              font-size: 1.5rem;
+              line-height: 1.8rem;
+
+              margin-top:1.6rem;
+            }
+          }
         }
-      }
-      .about-acess {
-        margin-top:2.4rem;
+        
       }
     }
-
-    .base-cell {
-      width: 100%;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+    
   }
+  
 
-  #stamp-container {
-    padding: 7.5rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 26.65rem;
-    clip-path: polygon(50% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
-
-    background-color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    img {
-      margin-top: 5rem;
-    }
-  }
+ 
 
 }
