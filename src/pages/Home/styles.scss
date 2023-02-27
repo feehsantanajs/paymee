@@ -1,199 +1,327 @@
+#container {
+  #background-top {
 
-#background-top {
+    height: 97.9rem;
+    background: linear-gradient(116.22deg, #E0784B 0%, #FF7347 22.47%, #E8AB4F 46.94%, #FEA827 69.91%, #FE471B 95.88%);
 
-  width: 100%;
-  height: 97.9rem;
-  background: linear-gradient(116.22deg, #E0784B 0%, #FF7347 22.47%, #E8AB4F 46.94%, #FEA827 69.91%, #FE471B 95.88%);
- 
-
-  main{
-    position:relative;
-    
-    #top-header {
-      padding: 7.5rem;
+    .content-top {
+      padding: 0 7.5rem;
       display: flex;
-      justify-content: space-between;
       align-items: center;
-  
-      .base-title {
-        display: flex;
-        flex-direction: column;
-        gap:5.4rem;
-  
-        .title-highlight {
-          h5:first-child {
-            font-weight: 700;
-            font-size: 1.6rem;
-            line-height: 1.9rem;
-  
-            color: rgba(255, 255, 255, 0.5);
-          }
-  
-          h1 {
-            font-weight: 600;
-            font-size: 6rem;
-            line-height: 7rem;
-            color: white;
-  
-            span {
-              color: #1E1F35;
-            }
-          }
-  
-          h5 {
-            font-weight: 400;
-            font-size: 2rem;
-            line-height: 2.5rem;
-            color: white;
-          }
-        }
-        .about-acess {
-          margin-top:2.4rem;
-        }
-  
-        .info-accept-qty{
-          display:flex;
-          
-          align-items: center;
-          gap:15rem;
-          height:7.8rem;
-  
-          font-weight: 700;
-          font-size: 1.4rem;
-          line-height: 120%;
-  
-          color:white;
-          .ellipses{
-            position:relative;
-            img{
-              position:absolute;
-              
-              border-radius: 100%;
-              
-              top:-3.2rem;
-  
-              &:last-child{
-                left:8rem;
-              }
-  
-              &:nth-child(2){
-                left:4rem;
-              }
-  
-              
-            }
-          }
-          
-        }
-      }
-  
-      .base-cell {
-        width: 100%;
-  
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-    #down-part{
-    
-     position:absolute;
-     width:100%;
-     top:64rem;
-      #stamp-container {
-     
-        padding: 7.5rem;
-        
-        bottom: 0rem;
-        width: 100%;
-        height: 26.65rem;
-        clip-path: polygon(50% 0, 100% 28%, 100% 100%, 0 100%, 0 28%);
-    
-        background-color: white;
-    
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    
-        
-        img {
-          margin-top: 5rem;
-        }
-      }
-      #about-paymee{
-        padding: 7.5rem;
-        padding-top:2.7rem;
-        font-weight: 700;
 
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      flex-direction: column;
+      width: 100%;
 
-        .description-about{
-          width:66.9rem;
+      #top-header {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        max-width: 144.6rem;
+        margin-top: 8rem;
+
+        .base-title {
           display: flex;
           flex-direction: column;
-          gap:1.6rem;
-          text-align: center;
-          h5{
-            color: #FF481C;
-            
-            font-size: 1.6prem;
-            line-height: 2.5prem;
-          }
-          p{
-            color:var(--blue-500);
-            font-size: 4.8rem;
-            line-height: 5rem;
-          }
-          span{
-            font-weight: 400;
-            font-size: 2rem;
-            line-height: 2.5rem;
-            color: #575757;
-          }
-        }
+          gap: 5.4rem;
 
-        .info-relevant-blocks{
-          margin-top:8rem;
-          width:100%;
-          display:flex;
-          justify-content: space-between;
-
-          .block{
-            width:24.2rem;
-            img{
-              padding:1rem;
-            }
-            p{
-              color:var(--blue-500);
+          .title-highlight {
+            h5:first-child {
               font-weight: 700;
-              font-size: 2rem;
-              line-height: 2rem;
-              span{
-                display:inline;
+              font-size: 1.6rem;
+              line-height: 1.9rem;
+
+              color: rgba(255, 255, 255, 0.5);
+            }
+
+            h1 {
+              font-weight: 600;
+              font-size: 6rem;
+              line-height: 7rem;
+              color: white;
+
+              span {
+                color: #1E1F35;
               }
             }
-            span{
-              display:block;
 
-              color:var(--gray-500);
+            h5 {
               font-weight: 400;
-              font-size: 1.5rem;
-              line-height: 1.8rem;
+              font-size: 2rem;
+              line-height: 2.5rem;
+              color: white;
+            }
 
-              margin-top:1.6rem;
+          }
+
+          .about-acess {
+            margin-top: 2.4rem;
+          }
+
+          .info-accept-qty {
+            display: flex;
+
+            align-items: center;
+            gap: 15rem;
+            height: 7.8rem;
+
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 120%;
+
+            color: white;
+
+            .ellipses {
+              position: relative;
+
+              img {
+                position: absolute;
+
+                border-radius: 100%;
+
+                top: -3.2rem;
+
+                &:last-child {
+                  left: 8rem;
+                }
+
+                &:nth-child(2) {
+                  left: 4rem;
+                }
+
+
+              }
+            }
+
+          }
+        }
+
+        .base-cell {
+          width: 100%;
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  main {
+    position: relative;
+    width: 100%;
+
+    #down-part {
+      position: absolute;
+      width: 100%;
+      top: -25rem;
+
+      .stamp-container {
+        width: 100%;
+
+
+        height: 26.65rem;
+        clip-path: polygon(50% 0, 100% 28%, 100% 100%, 0 100%, 0 28%);
+
+        background-color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .content-stamp-img {
+
+          max-width: 144.6rem;
+          width: 100%;
+
+          display: flex;
+          justify-content: space-between;
+
+          img {
+            margin-top: 5rem;
+          }
+        }
+
+      }
+
+      #about-paymee {
+        padding: 0 7.2rem;
+        padding-top: 2.7rem;
+        font-weight: 700;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .content-about-paymee {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          max-width: 144.6rem;
+          width: 100%;
+
+          .description-about {
+
+            width: 66.9rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+            text-align: center;
+
+            h5 {
+              color: #FF481C;
+
+              font-size: 1.6prem;
+              line-height: 2.5prem;
+            }
+
+            p {
+              color: var(--blue-500);
+              font-size: 4.8rem;
+              line-height: 5rem;
+            }
+
+            span {
+              font-weight: 400;
+              font-size: 2rem;
+              line-height: 2.5rem;
+              color: #575757;
+            }
+          }
+
+          .info-relevant-blocks {
+            margin-top: 8rem;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .block {
+              width: 24.2rem;
+
+              img {
+                padding: 1rem;
+              }
+
+              p {
+                color: var(--blue-500);
+                font-weight: 700;
+                font-size: 2rem;
+                line-height: 2rem;
+
+                span {
+                  display: inline;
+                }
+              }
+
+              span {
+                display: block;
+
+                color: var(--gray-500);
+                font-weight: 400;
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+
+                margin-top: 1.6rem;
+              }
             }
           }
         }
+
+
+      }
+
+      #how-it-works {
+        background: linear-gradient(239.9deg, #1B1C31 31.06%, #2F304A 78.25%);
+
+        height: 50rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 0 7.2rem;
+        .content {
+          max-width: 144.6rem;
+          width: 100%;
+          margin-top: 2rem;
+
+          display: flex;
+          justify-content: space-between;
+
+          .description-how-it-works {
+            margin-top: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2.2rem;
+
+            span {
+              font-weight: 700;
+              font-size: 1.8rem;
+              line-height: 2.9rem;
+              color: white;
+            }
+          }
+        }
+      }
+
+      #about-way-payment {
+        height: 54rem;
         
+        padding: 0 7.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .content-way-payemnt {
+          display: flex;
+          justify-content: space-between;
+          gap: 8.5rem;
+          max-width: 144.6rem;
+          width: 100%;
+
+          .solutions {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            h1 {
+              color: var(--blue-500)
+            }
+
+            p {
+              color: var(--gray-500);
+              margin-bottom: 4rem;
+            }
+          }
+          .options-way-payment {
+            width: 100%;
+            .scrap {
+              display: flex;
+              gap: 4.8rem;
+
+              &:first-child {
+                margin-bottom: 5rem;
+              }
+            }
+          }
+        }
+      }
+
+      #integrations-apps{
+        height:53.6rem;
+        background-color: #F5F5F5;
+
+        display:flex;
+        padding: 0 7.2rem;
+
+        .content-integrations-apps{
+          width:100%;
+          width:144.6rem;
+
+        }
       }
     }
-    
   }
-  
-
- 
-
 }

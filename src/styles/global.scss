@@ -2,6 +2,8 @@
 
   --blue-500:#1E1F3D;
   --gray-500:#575757;
+  --orange-500:#FF481C;
+
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -16,7 +18,23 @@
 body{
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
+}
 
-  
-  
+h5{
+  font-weight: 700;
+  font-size: 1.6;
+  line-height: 1.9rem;
+  color:var(--orange-500);
+}
+h1{
+  color:white;
+  font-weight: 600;
+  font-size: 4.5rem;
+  line-height: 4.5rem;
+}
+p{
+  color:white;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
