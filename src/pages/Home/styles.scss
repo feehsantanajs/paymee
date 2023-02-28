@@ -314,11 +314,46 @@
         background-color: #F5F5F5;
 
         display:flex;
+        justify-content: center;
+        align-items: center;
         padding: 0 7.2rem;
 
+        
+        
         .content-integrations-apps{
           width:100%;
           width:144.6rem;
+          display:flex;
+          gap:13rem;
+          .brands{
+            display:flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap:6rem;
+            
+            
+          }
+
+          .description.about-integrations{
+            width:100%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            
+            gap:1.6rem;
+            h1,p{
+              color: var(--blue-500);
+            }
+
+            span:last-child{
+              color: var(--orange-500);
+
+              img{
+                color: var(--orange-500)
+              }
+            }
+
+          }
 
         }
       }

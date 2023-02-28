@@ -5,7 +5,6 @@ import Maxmi from '../../assets/maxmi.svg'
 import ClickBus from '../../assets/clickbus.svg'
 import Moto from '../../assets/motorola.svg'
 import Levis from '../../assets/levis.svg'
-
 import Ellipse1 from '../../assets/ellipse-photo1.png'
 import Ellipse2 from '../../assets/ellipse-photo2.png'
 import Ellipse3 from '../../assets/ellipse-photo3.png'
@@ -14,11 +13,17 @@ import Security from '../../assets/security.svg'
 import Simple from '../../assets/simple.svg'
 import CodeImg from '../../assets/code.png'
 import RightArrow from '../../assets/right-icon.svg'
-
 import BoxIcon from '../../assets/icons/box-icon.svg'
 import ChainIcon from '../../assets/icons/chain-icon.svg'
 import PhoneIcon from '../../assets/icons/phone-icon.svg'
 import SquadIcon from '../../assets/icons/squad-deshed-icon.svg'
+
+import ApencartLogo from '../../assets/apencart-logo.svg'
+import BraspagLogo from '../../assets/braspag-logo.png'
+import MagentoLogo from '../../assets/magent-logo.png'
+import VtexLogo from '../../assets/vtex-logo.png'
+import WooLogo from '../../assets/woo-logo.png'
+import YepLogo from '../../assets/yep-logo.png'
 
 
 import { HeaderMenu } from '../../components/HeaderMenu'
@@ -208,11 +213,24 @@ export function Home() {
 
           <div id="integrations-apps">
             <div className="content-integrations-apps">
-              <div className="brands"></div>
-              <div className="description-about-integrations">
+              <div className="brands">
+                <img src={VtexLogo} alt="Logo Vtex" />
+                <img src={WooLogo} alt="Logo woo" />
+                <img src={MagentoLogo} alt="" />
+                <img src={ApencartLogo} alt="" />
+                <img src={YepLogo} alt="" />
+                <img src={BraspagLogo} alt="" />
+              </div>
+              <div className="description about-integrations">
                 <h1>Integrações com as principais plataformas</h1>
-                <p>Integre-se a diferentes plataformas de ecommerce
-para aprimorar e melhorar seu negócio</p>
+                <p>
+                  Integre-se a diferentes plataformas de ecommerce
+                  para aprimorar e melhorar seu negócio
+                </p>
+
+                <ButtonCreateAccount type='orange' />
+                <span>Desenvolvedores <img src={RightArrow} alt="" /></span>
+
               </div>
             </div>
           </div>
