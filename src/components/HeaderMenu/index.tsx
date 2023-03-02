@@ -1,28 +1,58 @@
 import './styles.scss';
 import LogoPaymeeWhite from '../../assets/logo/logo-paymee-white.svg'
-import LoginIcon from '../../assets/login-icon.svg'
+import LogoPaymee from '../../assets/logo/logo-paymee.svg'
+import LogoPaymeeSupport from '../../assets/logo/support-logo.svg'
+
+import LoginIconWhite from '../../assets/icons/login-icon-white.svg'
+import LoginIcon from '../../assets/icons/login-icon.svg'
 import RightArrow from '../../assets/right-icon.svg'
+import { useLocation } from 'react-router-dom'
+import { ButtonCreateAccount } from '../ButtonCreateAccount';
 
 
-export function HeaderMenu(){
-  return(
+
+export function HeaderMenu() {
+
+  const {pathname} = useLocation();
+  console.log(location.pathname)
+
+  return (
     <header>
-      <div className='menu-infos'>
-        <img src={LogoPaymeeWhite} alt="" />
 
-        <ul>
-          <li><a href='#'>Soluções</a></li>
-          <li><a href='#'>Preços</a></li>
-          <li><a href='#'>Suporte</a></li>
-          <li><a href='#'>Contato</a></li>
-        </ul>
-      </div>
-      <div className='access'>
-         
-        <a href="/login" className='login'><img src={LoginIcon} alt="login" /> <span>Login</span> </a>
-        <a href="/create" className='button-create-account'> <span>Criar Conta</span> <img src={RightArrow} alt="login" /></a>
-          
-      </div>
+      {pathname === '/'
+        ? <>
+          <div className='menu-infos'>
+            <img src={LogoPaymeeWhite} alt="" />
+
+            <ul>
+              <li><a href='#'>Soluções</a></li>
+              <li><a href='#'>Preços</a></li>
+              <li><a href='/support'>Suporte</a></li>
+              <li><a href='#'>Contato</a></li>
+            </ul>
+          </div>
+          <div className='access'>
+
+            <a href="/login" className='login'><img src={LoginIconWhite} alt="login" /> <span>Login</span> </a>
+            <a href="/create" className='button-create-account'> <span>Criar Conta</span> <img src={RightArrow} alt="login" /></a>
+
+          </div>
+        </>
+
+        : <div className='menu support'>
+            <div className='logo'>
+              <img src={LogoPaymee} alt="" />
+              <img src={LogoPaymeeSupport} alt="" />
+            </div>
+            <div className='access'>
+              <a href="/login" className='login'><img src={LoginIcon} alt="login" /> <span>Login</span> </a>
+              <ButtonCreateAccount type='orange'/>
+            </div>
+          </div>
+
+
+      }
+
     </header>
   )
 }

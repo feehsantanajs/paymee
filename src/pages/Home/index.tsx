@@ -25,12 +25,23 @@ import VtexLogo from '../../assets/logo/vtex-logo.svg'
 import WooLogo from '../../assets/logo/woo-logo.svg'
 import YepLogo from '../../assets/logo/yep-logo.svg'
 
+import ItauLogo from '../../assets/logo/itau-logo.svg'
+import BradescoLogo from '../../assets/logo/bradesco-logo.svg'
+import SantanderLogo from '../../assets/logo/santander-logo.svg'
+import CaixaLogo from '../../assets/logo/caixa-logo.svg'
+import BBLogo from '../../assets/logo/bb-logo.svg'
+import InterLogo from '../../assets/logo/inter-logo.svg'
+import BoxLogo from '../../assets/logo/box-logo.svg'
+import Bs2Logoo from '../../assets/logo/bs2-logo.svg'
+
 
 import { HeaderMenu } from '../../components/HeaderMenu'
 import { Smartphone } from '../../components/Smartphone'
 import { ButtonCreateAccount } from '../../components/ButtonCreateAccount'
 import { RecommendationBlock } from '../../components/RecommendationBlock'
 import { PaymentBlock } from '../../components/PaymentBlock'
+import { ReadyContainer } from '../../components/ReadyContainer'
+import { FooterContainer } from '../../components/FooterContainer'
 
 
 export function Home() {
@@ -292,10 +303,80 @@ export function Home() {
                 </div>
               </div>
               <div className='info-plus'>
-                teste
+                <div className='first-part'>
+                  <ButtonCreateAccount type='blue'/>
+                  <span>Desenvolvedores ➜</span>
+                </div>
+                <div className='second-part'>
+                  <div className='banks'>
+                    <span>Aceita os principais bancos</span>
+                    <div className='banks-content'>
+                      <img src={ItauLogo} alt="" />
+                      <img src={BradescoLogo} alt="" />
+                      <img src={SantanderLogo} alt="" />
+                      <img src={CaixaLogo} alt="" />
+                      <img src={BBLogo} alt="" />
+                      <img src={InterLogo} alt="" />
+                      <img src={BoxLogo} alt="" />
+                      <img src={Bs2Logoo} alt="" />
+                    </div>
+                  </div>
+                  <div className='info-extra'>
+                    <ul>
+                      <li>Sem Mensalidade</li>
+                      <li>Repasse em D+1</li>
+                      <li>Sem custo de setup</li>
+                      <li>Sem fidelidade </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <div id="doubts">
+            <div className='container about-doubts'>
+                <div className='questions-support'>
+                  <h1>Ficou com alguma dúvida?</h1>
+                  <p>
+                    Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. 
+                    Indulgence way everything joy alteration boisterous the attachment.
+                  </p>
+
+                  <a href="">Suporte ➜</a>
+                </div>
+                <div className='frequentily-doubts'>
+                  <section>
+                      <h3>Em quanto tempo o dinheiro está disponível na minha conta bancária?</h3> <span>-</span>
+                      <div className='answare'>
+                        <p>
+                        A PayMee realiza o pagamento de suas vendas no dia útil seguinte.
+                        Não é necessário entrar no painel para realizar um saque, nós fazemos o repasse de forma automática  
+                        diretamente na conta bancária pré-cadastrada, já descontando a tarifa.
+                        </p>
+                      </div>
+                     
+                  </section>
+                  <section>
+                    <h3>Are there any additional fee?</h3><span>+</span>
+                  </section>
+                  <section>
+                  <h3>How can I get the app?</h3><span>+</span>
+                  </section>
+                  <section>
+                    <h3>What features do you offer and other not?</h3><span>+</span>               
+                  </section>
+                </div>
+
+
+            </div>
+          </div>
+
+          <div className='ready-block'>
+            <ReadyContainer />
+          </div>
+
+          <FooterContainer />
         </div>
       </main>
     </div>

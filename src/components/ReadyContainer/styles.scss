@@ -1,0 +1,25 @@
+.container-ready{
+  background: linear-gradient(116.22deg, #FFAA66 0%, #FEA43B 27.92%, #E8714F 45.44%, #FE2774 69.91%, #FE471B 88.39%);
+  box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  width: 114.4rem;
+  height: 29.6rem;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1{
+    text-align: center;
+    font-weight: 600;
+    font-size: 5.3rem;
+    line-height: 7rem;
+
+    margin-bottom:2.7rem;
+
+    span{
+      color:var(--blue-500)
+    }
+  }
+}

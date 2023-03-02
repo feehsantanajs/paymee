@@ -1,0 +1,12 @@
+#container-support{
+  
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  .questions-support{
+
+    padding:8rem  7.2rem;
+    height:42rem;
+    background: rgba(253, 243, 240, 0.6); 
+  }
+}

@@ -352,24 +352,21 @@
 
       #cases-who-use-recommend{
         margin-top:7.3rem;
-        
-        position: relative;
-        background-color: var(--gray-200);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 35%, rgba(245,245,245,1) 100%);
         .content-cases-who-use-recommend{
+          position: relative;
           display:flex;
           align-items: center;
           flex-direction: column;
-          border:1px solid blue;
-
-          height:200rem;
+          padding: 2rem 0;
+          height:180rem;
           
           .container-recommendation{
-            position: relative;
+            
             z-index: 2;
             max-width: 144.6rem;
             width:100%;
             text-align: center;
-            
             
             h5{
               font-weight: 700;
@@ -390,8 +387,6 @@
               }
             }
             .messages-blocks{
-              
-              z-index: 1;
               margin-top:4.6rem;
               display:flex;
               justify-content: space-between;
@@ -405,7 +400,7 @@
             width:100%;
             top:18rem;
             height:118.5rem;
-
+            
             display:flex;
             justify-content: center;
             align-items: center;
@@ -415,7 +410,7 @@
               max-width: 144.6rem;
 
               display:flex;
-              justify-content: center;
+              justify-content: space-between;
               align-items: center;
               gap:7.6rem;
               
@@ -502,15 +497,15 @@
           }
 
           .container-type-payment{
-            position: relative;
-            z-index: 2;
-            top:70rem;
-            border:1px solid red;
+           
+            z-index: 10;
+            
+
             max-width: 144.6rem;
             width: 100%;
 
            
-            margin-top:10rem;
+            margin-top:80rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -524,12 +519,134 @@
           }
 
           .info-plus{
-            margin-top:50rem;
+            width:100%;
+            max-width: 144.6rem;
+            z-index: 10;
             height:30rem;
-            background-color: red;
-            width:30rem;
+            
+            margin-top: 4.9rem;
+
+            .first-part{
+              display:flex;
+              align-items: center;
+              gap:2.7rem;
+            }
+            .second-part{
+              margin-top: 5.6rem;
+              display:flex;
+              align-items: center;
+              gap:14.5rem;
+              .banks{
+               
+                max-width: 33rem;
+                width:100%;
+                span{
+                  font-weight: 600;
+                  font-size: 1.5rem;
+                  line-height: 5rem;
+                }
+                .banks-content{
+                  display: flex;
+                  justify-content: space-between;
+                }
+              }
+              .info-extra{
+                max-width:30.6rem;
+                width:100%;
+                height:100%;
+               
+                ul{
+                  display:flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  flex-wrap: wrap;
+                  li{
+                    list-style-image:url("../../assets/icons/yes.svg");
+
+                    font-weight: 600;
+                  font-size: 1.5rem;
+                  line-height: 5rem;
+                  }
+                }
+              }
+            }
+            
           }
         }
+      }
+
+      #doubts{
+        background: linear-gradient(264.04deg, #1B1C31 24.61%, #2F304A 99.06%);
+          display:flex;
+          justify-content: center;
+        .container.about-doubts{
+          width: 100%;
+          max-width: 144.6rem;
+          height:86rem;
+          display:flex;
+          gap:10.6rem;
+
+          padding: 4.8rem 0;
+          .questions-support{
+            h1{
+
+            }
+            p{
+              margin: 2.3rem 0 3.5rem 0;
+              font-weight: 400;
+              font-size: 1.8rem;
+              line-height: 2.9rem;
+            }
+
+            a{
+             
+              color:var(--orange-500);
+              text-decoration: none;
+
+              font-weight: 700;
+              font-size: 1.8rem;
+              line-height: 2.9rem;
+            }
+          }
+
+          .frequentily-doubts{
+
+            section{
+              font-weight: 700;
+              font-size: 2rem;
+              line-height: 2.9rem;
+
+              color:white;
+              border-bottom: 2px solid #8896A6;
+              padding: 2rem 0;
+              span{
+                display: inline-block;
+                float: right;
+
+              }
+
+              h3{ 
+                display: inline-block;
+               
+              }
+
+              .answare{
+                margin-top:1rem;
+                font-weight: 400;
+                font-size: 1.8rem;
+                line-height: 2.9rem;
+              }
+            }
+           
+          }
+        }
+      }
+
+      .ready-block{
+        position: relative;
+        top:-20rem;
+        display:flex;
+        justify-content: center;
       }
     }
   }
