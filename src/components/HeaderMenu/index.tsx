@@ -1,5 +1,5 @@
 import './styles.scss';
-import LogoPaymeeWhite from '../../assets/logo-paymee-white.svg'
+import LogoPaymeeWhite from '../../assets/logo/logo-paymee-white.svg'
 import LoginIcon from '../../assets/login-icon.svg'
 import RightArrow from '../../assets/right-icon.svg'
 

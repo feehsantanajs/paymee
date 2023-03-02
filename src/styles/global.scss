@@ -1,6 +1,7 @@
 *{
 
   --blue-500:#1E1F3D;
+  --gray-200:#F5F5F5;
   --gray-500:#575757;
   --orange-500:#FF481C;
 
@@ -37,4 +38,31 @@ p{
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.5rem;
+}
+
+
+.polygon-blue-dark{
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  background: linear-gradient(121.82deg, #2F304A 29.9%, #1B1C31 73.62%);
+ 
+}
+
+.ellipses {
+  position: relative;
+ 
+  img {
+    position: absolute;
+    
+    border-radius: 100%;
+    
+    &:last-child {
+      left: 8rem;
+    }
+
+    &:nth-child(2) {
+      left: 4rem;
+    }
+
+
+  }
 }

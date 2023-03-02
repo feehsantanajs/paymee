@@ -18,17 +18,19 @@ import ChainIcon from '../../assets/icons/chain-icon.svg'
 import PhoneIcon from '../../assets/icons/phone-icon.svg'
 import SquadIcon from '../../assets/icons/squad-deshed-icon.svg'
 
-import ApencartLogo from '../../assets/apencart-logo.svg'
-import BraspagLogo from '../../assets/braspag-logo.png'
-import MagentoLogo from '../../assets/magent-logo.png'
-import VtexLogo from '../../assets/vtex-logo.png'
-import WooLogo from '../../assets/woo-logo.png'
-import YepLogo from '../../assets/yep-logo.png'
+import ApencartLogo from '../../assets/logo/apencart-logo.svg'
+import BraspagLogo from '../../assets/logo/braspag-logo.svg'
+import MagentoLogo from '../../assets/logo/magento-logo.svg'
+import VtexLogo from '../../assets/logo/vtex-logo.svg'
+import WooLogo from '../../assets/logo/woo-logo.svg'
+import YepLogo from '../../assets/logo/yep-logo.svg'
 
 
 import { HeaderMenu } from '../../components/HeaderMenu'
 import { Smartphone } from '../../components/Smartphone'
 import { ButtonCreateAccount } from '../../components/ButtonCreateAccount'
+import { RecommendationBlock } from '../../components/RecommendationBlock'
+import { PaymentBlock } from '../../components/PaymentBlock'
 
 
 export function Home() {
@@ -160,7 +162,7 @@ export function Home() {
                   Oferecemos soluções de pagamento instantâneas para<br /> você conseguir elevar seu negócio para outro
                 </p>
                 <ButtonCreateAccount type='orange' />
-                <span>Desenvolvedores <img src={RightArrow} alt="" /></span>
+                <span>Desenvolvedores ➜</span>
               </div>
             </div>
           </div>
@@ -227,10 +229,70 @@ export function Home() {
                   Integre-se a diferentes plataformas de ecommerce
                   para aprimorar e melhorar seu negócio
                 </p>
+                <div className='interations'>
+                  <ButtonCreateAccount type='orange' />
+                  <span>Desenvolvedores ➜</span>
+                </div>
+                
+                <span className='whatplus'>E muito mais</span>
+              </div>
+            </div>
+            
+          </div>
 
-                <ButtonCreateAccount type='orange' />
-                <span>Desenvolvedores <img src={RightArrow} alt="" /></span>
+          <div id='cases-who-use-recommend'>
 
+            <div className='content-cases-who-use-recommend'>
+              <div className='container-recommendation'>
+                <h5>CASES</h5>
+                <h1>Quem usa <span>recomenda</span></h1>
+                <div className='messages-blocks'>
+                  <RecommendationBlock />
+                  <RecommendationBlock />
+                  <RecommendationBlock />
+                </div>
+              </div>
+              <div className='polygon-blue-dark'>
+                <div className='polygon-content'>
+                  <div className='ep-pilote'>
+                    <div className='polygon-ep'>
+                   
+                    </div>
+                    
+                    <div className='content-ep'>
+                      <div className='ellipses'>
+                        <img src={Ellipse1} alt="" />
+                        <img src={Ellipse2} alt="" />
+                      </div>
+                      <h3>Episódio Piloto</h3>
+                      <p>Preparando a próxima era da <br />economia da internet</p>
+                      <button>Assistir ao vivo</button>
+                    </div>
+                  </div>
+                  <div className='about-event'>
+                    <h5>Evento virtual</h5>
+                    <h1>Assista tudo sobre o futuro da economia da internet.</h1>
+                    <p>
+                      A Paymee Sessions, nossa conferência anual, já está disponível para você assistir online. 
+                      Saiba mais sobre o futuro da economia da internet e conheça os novos produtos da Paymee.
+                    </p>
+
+                    <a href="#">Inscrever-se ➜</a>
+
+                    <span>Mais Informações ➜</span>
+                  </div>
+                </div>
+              </div>
+
+              <div className='container-type-payment'>
+                <div className='content-type-payment'>
+                  <PaymentBlock />
+                  <PaymentBlock />
+                  <PaymentBlock />
+                </div>
+              </div>
+              <div className='info-plus'>
+                teste
               </div>
             </div>
           </div>
