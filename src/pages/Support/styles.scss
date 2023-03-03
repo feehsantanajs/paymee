@@ -3,11 +3,117 @@
   display:flex;
   justify-content: center;
   flex-direction: column;
+ 
+ 
   .questions-support{
-
-    padding:8rem  7.2rem;
     height:42rem;
+    padding:8rem  7.2rem;
     background: rgba(253, 243, 240, 0.6); 
-    
+    .content-quertions-support{
+      margin:0 auto;
+      max-width:144.6rem;
+      width:100%;
+      
+      h2{
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 3.6rem;
+
+        color: #636363;
+
+      }
+      h1{
+        font-weight: 600;
+        font-size: 5rem;
+        line-height: 6.1rem;
+        color:#000000;
+      }
+      p{
+        margin-top:1.7rem;
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.4rem;
+
+        color: #9E9E9E;
+
+      }
+      .input-search{
+        background-color: white;
+        margin-top:5.4rem;
+        display:flex;
+        border: 2px solid #CDCDCD;
+        border-radius:10px;
+
+        height:4.6rem;
+        max-width: 60.6rem;
+        width:100%;
+
+        padding:0 2.6rem;
+        img{
+          width:2.6rem;
+        }
+        input{
+          margin-left:2rem;
+          width:100%;
+          border:0;
+
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+      .email-support{
+       
+        width:23.1rem;
+        margin-left: auto;
+        padding:1rem;
+
+        background-color: #EBEBEB;
+        border-radius: 10px;
+        span{
+          display: block;
+
+          &:first-child{
+            font-weight: 500;
+            font-size: 1.5rem;
+           
+          }
+        }
+      }
+      
+    }
+  }
+
+  #verifications{
+    padding:0 7.2rem;
+
+    .content-verification{
+      width:100%;
+      max-width: 144.6rem;
+      margin:0 auto;
+      margin:3.2rem auto 9rem;
+
+      display:flex;
+      align-items: center;
+      justify-content: start;
+      gap:30rem;
+      
+
+      .verification{
+        ul{
+          margin-top:2rem;
+          padding-left:2.2rem;
+          color:var(--orange-500);
+          li{
+            a{
+              font-weight: 400;
+              font-size:1.6rem;
+              line-height: 2rem;
+              color:var(--orange-500);
+            }
+          }
+        }
+      }
+    }
   }
 }
