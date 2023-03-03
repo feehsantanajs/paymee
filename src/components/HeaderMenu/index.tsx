@@ -20,28 +20,28 @@ export function HeaderMenu() {
     <header>
 
       {pathname === '/'
-        ? <>
-          <div className='menu-infos'>
+        ?<div className='menu home'>
             <img src={LogoPaymeeWhite} alt="" />
 
             <ul>
               <li><a href='#'>Soluções</a></li>
               <li><a href='#'>Preços</a></li>
               <li><a href='/support'>Suporte</a></li>
-              <li><a href='#'>Contato</a></li>
+              <li><a href='/contact'>Contato</a></li>
             </ul>
+
+            <div className='access'>
+
+              <a href="/login" className='login'><img src={LoginIconWhite} alt="login" /> <span>Login</span> </a>
+              <a href="/create" className='button-create-account'> <span>Criar Conta</span> <img src={RightArrow} alt="login" /></a>
+
+            </div>
           </div>
-          <div className='access'>
 
-            <a href="/login" className='login'><img src={LoginIconWhite} alt="login" /> <span>Login</span> </a>
-            <a href="/create" className='button-create-account'> <span>Criar Conta</span> <img src={RightArrow} alt="login" /></a>
-
-          </div>
-        </>
-
-        : <div className='menu support'>
+        : pathname === '/support' 
+        ? <div className='menu support'>
             <div className='logo'>
-              <img src={LogoPaymee} alt="" />
+              <a href="/"><img src={LogoPaymee} alt="" /></a>
               <img src={LogoPaymeeSupport} alt="" />
             </div>
             <div className='access'>
@@ -50,6 +50,28 @@ export function HeaderMenu() {
             </div>
           </div>
 
+        : pathname === '/login' || pathname === '/create-user'
+        
+        ? <div className='menu user'>
+            <div className='logo'>
+              <a href="/"><img src={LogoPaymee} alt="Paymee" /></a>
+            </div>
+          </div>
+
+        : <div className='menu base'>
+            <a href="/"><img src={LogoPaymee} alt="Paymee"/></a>
+
+            <ul>
+              <li><a href='#'>Soluções</a></li>
+              <li><a href='#'>Preços</a></li>
+              <li><a href='/support'>Suporte</a></li>
+              <li><a href='/contact'>Contato</a></li>
+            </ul>
+            <div className='access'>
+              <a href="/login" className='login'><img src={LoginIcon} alt="login" /> <span>Login</span> </a>
+               <ButtonCreateAccount type='orange'/>
+            </div>
+          </div>
 
       }
 
