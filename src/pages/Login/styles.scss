@@ -1,0 +1,102 @@
+#container-login{
+  height: 100vh;
+  width:100wh;
+  .content-login{
+    border-top:1px solid var(--gray-200);
+    display:flex;
+    justify-content: space-between;
+    
+    .form-login-getin{
+      margin:0 auto;
+      max-width: 65.6rem;
+      width:100%;
+      padding:10rem;
+      h1{
+        margin-top:4.4rem;
+        font-weight: 600;
+        font-size: 4rem;
+        line-height: 5rem;
+        color:var(--blue-500);
+      }
+      span{
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 5remx;
+      }
+
+      form{
+        margin-top:2.7rem;
+        
+
+        .conection{
+          display:flex;
+          align-items: center;
+         
+          margin: 0.8rem 0 3rem ;
+      
+          label{
+            margin:0 0.6rem;
+            color:var(--blue-500);
+          }
+          #chackbox-connect{
+            width:2rem;
+            height:2rem;
+            background: #FAFAFC;
+            border: 0.8px solid #E7E9ED;
+            border-radius: 4px;
+            border:1px solid blue;
+          }
+          a{
+            margin-left: auto;
+            color:var(--blue-500);
+          }
+        }
+
+        button.logar{
+          width:100%;
+          height:5rem;
+          border:0;
+          background: var(--orange-500);
+          border-radius: 5px;
+
+          font-weight: 600;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+
+          color: #FFFFFF;
+
+          cursor: pointer; 
+          
+          transition: filter 0.25s;
+
+          &:hover{
+            filter:brightness(0.9)
+          }
+        }
+      }
+      p{
+        margin-top:1.3rem;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+
+        color:var(--blue-500);
+
+        a{
+          color:var(--blue-500);
+        }
+      }
+    }
+    .about-login{
+
+      max-width: 106.7rem;
+      width:100%;
+      height:100vh;
+     
+      background: url('../../assets/business-image.png') no-repeat;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}

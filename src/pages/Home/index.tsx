@@ -12,7 +12,7 @@ import Coffee from '../../assets/coffee.svg'
 import Security from '../../assets/security.svg'
 import Simple from '../../assets/simple.svg'
 import CodeImg from '../../assets/code.png'
-import RightArrow from '../../assets/right-icon.svg'
+
 import BoxIcon from '../../assets/icons/box-icon.svg'
 import ChainIcon from '../../assets/icons/chain-icon.svg'
 import PhoneIcon from '../../assets/icons/phone-icon.svg'

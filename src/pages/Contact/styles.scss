@@ -1,4 +1,61 @@
 #container-contact{
 
+  .container-sup{
+    border-top:1px solid var( --gray-300);
+    
+    .content-contact{
+    
+      display:flex;
+      width:100%;
+      max-width: 144.6rem;  
+      margin:5.8rem auto;
 
+    .description-about{
+      width:100%;
+      max-width: 50rem;
+      h1{
+        font-weight: 600;
+        font-size: 5rem;
+        line-height: 6.5rem;
+        color:var(--blue-500);
+      }
+      p{
+        font-size: 1.6rem;
+        line-height: 19px;
+        color: #727272;
+      }
+    }
+    .form-to-getin-contact{
+      padding-top:3.7rem;
+      margin-left:auto;
+      max-width: 57.6rem;
+      width: 100%;
+    
+      border: 1px solid #E8EAEC;
+      border-radius: 20px;
+      h3{
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 7rem;
+        color:black;
+        text-align: center;
+      }
+    
+    }
+    
+
+    }
+
+    .content-ready{
+      padding:0 7.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom:8rem;
+      width:100%;
+    
+    }
+  }
+   
+  
 }

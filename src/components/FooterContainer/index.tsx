@@ -5,7 +5,6 @@ import YouTubeNetwork from '../../assets/logo/youtube-network.svg'
 import LinkedinNetwork from '../../assets/logo/linkedin-network.svg'
 import InstaNetwork from '../../assets/logo/insta-network.svg'
 
-import BG from '../../assets/BG.svg'
 export function FooterContainer() {
   return (
     <footer>
@@ -63,7 +62,7 @@ export function FooterContainer() {
             <ul>
               <li><a href='#'>Política de privacidade</a></li>
               <li><a href='#'>Estrutura de risco</a></li>
-              <li><a href='#'>Termos de uso</a></li>
+              <li><a href='/term-use'>Termos de uso</a></li>
               <li><a href='#'>Canal de denúncia</a></li>
               <li><a href='#'>Código de ética</a></li>
               <li><a href='#'>Política de segurança cibernética</a></li>

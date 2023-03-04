@@ -18,7 +18,6 @@ export function HeaderMenu() {
 
   return (
     <header>
-
       {pathname === '/'
         ?<div className='menu home'>
             <img src={LogoPaymeeWhite} alt="" />

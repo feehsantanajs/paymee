@@ -1,0 +1,34 @@
+
+.container-sup{
+  .content-politic{
+    width: 100%;
+    max-width: 144.6rem;
+    margin:7rem auto;
+
+    .about-politic{
+      max-width: 78rem;
+      
+      h1{
+        margin: 0.6rem 0 1.7rem;
+      }
+      p{
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 2.4rem;
+  
+        color: #9E9E9E;
+      }
+    }
+  
+  }
+
+  .content-ready{
+    padding:0 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:8rem;
+    width:100%;
+  
+  }
+}
