@@ -2,7 +2,7 @@ header{
   margin:0 auto;
   height:7.5rem;
   
-  max-width:144.6rem;
+  max-width: 124.5rem;  
   width:100%;
   
   display:flex;
@@ -108,12 +108,15 @@ header{
             font-weight: 500;
             font-size: 1.6rem;
             line-height: 1.9rem;
-            color: var(--blue);
+            color: #828282;
             text-decoration: none;
-            transition: filter 0.25s;
+            transition: color 0.25s;
             &:hover{
-              filter: brightness(0.78);
-              -webkit-filter: brightness(0.78);
+              color:var(--blue-500)
+            }
+
+            &:visited{
+              color: #828282;
             }
           }
         }

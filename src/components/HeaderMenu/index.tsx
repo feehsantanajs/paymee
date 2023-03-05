@@ -14,7 +14,7 @@ import { ButtonCreateAccount } from '../ButtonCreateAccount';
 export function HeaderMenu() {
 
   const {pathname} = useLocation();
-  console.log(location.pathname)
+  
 
   return (
     <header>

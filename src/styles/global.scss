@@ -7,7 +7,7 @@
   --gray-300:#E8EAEC;
   --gray-500:#575757;
   
-
+  --pink-50: rgba(253, 243, 240, 0.6);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -26,6 +26,11 @@ body{
 
 .container-sup{
   padding: 0 7.2rem;
+  .content-base{
+      width:100%;
+      max-width: 124.5rem;  
+      margin:0 auto;
+  }
 }
 
 button{
@@ -36,7 +41,7 @@ h1{
   color:var(--blue-500);
   font-weight: 600;
   font-size: 4.5rem;
-  line-height: 4.5rem;
+  line-height: 6rem;
 }
 
 h5{
@@ -48,6 +53,7 @@ h5{
 
 
 h3.title-page{
+  padding-top:6.8rem;
   font-weight: 600;
   font-size: 3rem;
   line-height: 3.6rem;
@@ -56,10 +62,11 @@ h3.title-page{
 }
 
 p{
+  
   color:white;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 2.4rem;
 }
 
 

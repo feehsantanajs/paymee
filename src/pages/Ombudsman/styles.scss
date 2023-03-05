@@ -1,0 +1,44 @@
+
+#container-ombusman{
+  .container-sup{
+    
+    &:nth-child(2){
+      background: rgba(253, 243, 240, 0.6);
+    }
+    .content-ombusman{
+      width: 100%;
+      max-width: 124.5rem;
+      margin:0 auto 9.4rem;
+    
+      padding:6.8rem 0 3.8rem 0;
+      .about-ombusman{
+        max-width: 77.2rem;
+  
+       p{
+        margin-top:2.1rem;
+        color: #9E9E9E;
+       }
+      }
+    }
+  }
+  
+  .form-to-getin-contact{
+    margin:0 auto 28rem;
+    padding-top:3.7rem;
+    
+    max-width: 124.5rem;
+    width: 100%;
+  
+    border: 1px solid #E8EAEC;
+    border-radius: 20px;
+    h3{
+      font-weight: 600;
+      font-size: 3rem;
+      line-height: 7rem;
+      color:black;
+      text-align: center;
+    }
+    
+  }
+}
+
