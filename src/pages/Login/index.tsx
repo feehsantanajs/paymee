@@ -29,7 +29,7 @@ export function Login(){
 
             <button className='logar'>Login ➜</button>
           </form>
-          <p>Você ainda não tem conta? <a href="/create-user"> Criar Conta </a></p>
+          <p>Você ainda não tem conta? <a href="/create-account"> Criar Conta </a></p>
         </div>  
         <div className="about-login">
          

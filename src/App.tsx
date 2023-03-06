@@ -8,6 +8,7 @@ import { PrivacityPolitic } from './pages/PrivacityPolitic'
 import { Ombudsman } from './pages/Ombudsman'
 import { About } from './pages/About'
 import { MediaPaymee } from './pages/MediaPaymee'
+import { CreateAccount } from './pages/CreateAccount'
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
         <Route path="/ombudsman"  element={<Ombudsman />}/>
         <Route path="/about"  element={<About />}/>
         <Route path="/login"  element={<Login />}/>
-        <Route path="/create-account"  element={<Home />}/>
+        <Route path="/create-account"  element={<CreateAccount />}/>
         <Route path="/media"  element={<MediaPaymee />}/>
       </Routes>
     </Router>

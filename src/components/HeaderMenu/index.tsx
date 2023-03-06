@@ -32,7 +32,7 @@ export function HeaderMenu() {
             <div className='access'>
 
               <a href="/login" className='login'><img src={LoginIconWhite} alt="login" /> <span>Login</span> </a>
-              <a href="/create" className='button-create-account'> <span>Criar Conta</span> <img src={RightArrow} alt="login" /></a>
+              <a href="/create-account" className='button-create-account'> <span>Criar Conta</span> <img src={RightArrow} alt="login" /></a>
 
             </div>
           </div>
