@@ -42,6 +42,8 @@ import { RecommendationBlock } from '../../components/RecommendationBlock'
 import { PaymentBlock } from '../../components/PaymentBlock'
 import { ReadyContainer } from '../../components/ReadyContainer'
 import { FooterContainer } from '../../components/FooterContainer'
+import { SellsDone } from '../../components/SellsDone'
+import { PixBlock } from '../../components/PixBlock'
 
 
 export function Home() {
@@ -78,6 +80,8 @@ export function Home() {
                 </div>
                 <div className="base-cell">
                   <Smartphone />
+                  <SellsDone />
+                  <PixBlock />
                 </div>
               </div>
             </div>
