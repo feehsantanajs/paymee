@@ -1,0 +1,58 @@
+#container-media{
+  .container-sup{
+ 
+
+    &:nth-child(2){
+      background: url('../../assets/woman-payme.png') no-repeat;
+      background-position: top right;
+      border-top: 1px solid var(--gray-300);
+      height:68rem;
+      display:flex;
+      align-items: center;
+    }
+  
+    &:nth-child(3){
+      border-bottom: 3px solid rgba(188, 188, 188, 0.3);
+    }
+  
+  
+    .about-media{
+     
+      max-width: 94rem;
+      height:50.7rem;
+      background: #FFFFFF;
+      border-radius: 10px;
+  
+    }
+  
+    .menu-media{
+      margin-top:2rem;
+     
+      ul{
+        display:flex;
+        gap:6.2rem;
+        li{
+          display:flex;
+          a{
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 2.4rem;
+            text-decoration: none;
+            color: #A9A9A9;
+            padding-bottom:2.2rem ;
+            border-bottom: 3px solid transparent;
+  
+            &.active{
+              color: var(--orange-500)
+            }
+            &:hover{
+              border-bottom:3px solid var(--orange-500);
+              
+            }
+          }
+        }
+      }
+    }
+  
+  }
+}

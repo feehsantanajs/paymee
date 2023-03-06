@@ -62,11 +62,14 @@ h3.title-page{
 }
 
 p{
-  
   color:white;
   font-weight: 400;
   font-size: 2rem;
   line-height: 2.4rem;
+}
+
+p.text-page{
+  color:var(--gray-500);
 }
 
 
