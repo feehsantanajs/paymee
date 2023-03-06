@@ -20,7 +20,7 @@ export function Smartphone(){
         </ul>
      </div>
     <div className='main-content'>
-      <img src={ImageCell} alt="Image Cell" />
+      <img src={ImageCell} alt="Image Cell" id="screen-cell" />
 
       <div className='add-cart'>
         <img src={Add} alt="" />
@@ -30,12 +30,12 @@ export function Smartphone(){
       <div className='delivery-smartphone'>
 
         <div className='point-info'>
-          <div className='block address'><img src={Map} alt="" /></div>
+          <div className='block address'><img src={Map} alt="Icone" /></div>
           <span>10506 - 4904 Deans Lane - Bedford Village	- New York - US</span>
         </div>
         
         <div className='point-info'>
-          <div className='block date'><img src={TruckTime} alt="" /></div>
+          <div className='block date'><img src={TruckTime} alt="Icone" /></div>
           <span>Quinta-feira - 13:00</span>
         </div>
         

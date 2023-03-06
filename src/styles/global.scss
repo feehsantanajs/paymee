@@ -22,16 +22,36 @@
 body{
   font-family: 'Inter', sans-serif;
   font-size: 1.6rem;
-}
 
-.container-sup{
-  padding: 0 7.2rem;
-  .content-base{
-      width:100%;
-      max-width: 124.5rem;  
-      margin:0 auto;
+  .container-sup{
+    padding: 0 7.2rem;
+    .content-base{
+        width:100%;
+        max-width: 124.5rem;  
+        margin:0 auto;
+    }
   }
 }
+@media screen and (min-width: 998px) and (max-width: 1245px) {
+  :root {
+    font-size: 46.87%;
+  }
+  
+}
+@media screen and (min-width:425px ) and (max-width: 998px) {
+  :root {
+    font-size: 31.25%;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  :root {
+    font-size:25%;
+  }
+  
+}
+
 
 button{
   cursor: pointer;
@@ -86,11 +106,9 @@ p.text-page{
     position: absolute;
     
     border-radius: 100%;
-    
     &:last-child {
       left: 8rem;
     }
-
     &:nth-child(2) {
       left: 4rem;
     }
@@ -125,3 +143,4 @@ label{
   font-size: 1.6rem;
   line-height: 1.8rem;
 }
+

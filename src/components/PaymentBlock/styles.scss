@@ -3,5 +3,47 @@
   background-color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   border-radius: 6px;
-  width:40rem;
+  max-width:40rem;
+  width:100%;
+  
+  padding:2.5rem 2.5rem;
+
+  h1{
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+
+  ul{
+    padding-left:2.5rem;
+    display: flex;
+    flex-direction: column;
+    gap:1.3rem;
+    li{
+      list-style-image: url(../../assets/icons/yes-orange.svg);
+      font-size: 1.2rem;
+    }
+  }
+  .rest-block{
+    margin:2rem 0;
+    span{
+      
+      display:block;
+      color:var(--orange-500)
+    }
+    
+    a{
+      display:block;
+      color:white;
+      text-decoration: none;
+      background-color: var(--blue-500);
+
+      border-radius: 6px;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      text-align: center;
+      max-width: 11.3rem;
+      margin-top:2rem;
+    }
+  }
+  
 }

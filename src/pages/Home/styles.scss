@@ -1,96 +1,115 @@
-#container {
-  #background-top {
-
-    height: 97.9rem;
-    background: linear-gradient(116.22deg, #E0784B 0%, #FF7347 22.47%, #E8AB4F 46.94%, #FEA827 69.91%, #FE471B 95.88%);
-
-    .content-top {
-      padding: 0 7.5rem;
-      display: flex;
-      align-items: center;
-
-      flex-direction: column;
-      width: 100%;
-
-      #top-header {
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        max-width: 124.5rem;
-        margin-top: 8rem;
-
-        .base-title {
-          display: flex;
-          flex-direction: column;
-          gap: 5.4rem;
-
-          .title-highlight {
-            h5:first-child {
-              font-weight: 700;
-              font-size: 1.6rem;
-              line-height: 1.9rem;
-
-              color: rgba(255, 255, 255, 0.5);
-            }
-
-            h1 {
-              font-weight: 600;
-              font-size: 6rem;
-              line-height: 7rem;
-              color: white;
-
-              span {
-                color: #1E1F35;
-              }
-            }
-
-            h5 {
-              font-weight: 400;
-              font-size: 2rem;
-              line-height: 2.5rem;
-              color: white;
-            }
-
-          }
-
-          .about-acess {
-            margin-top: 2.4rem;
-          }
-
-          .info-accept-qty {
-            display: flex;
-
-            align-items: center;
-            gap: 15rem;
-            height: 7.8rem;
-
-            font-weight: 700;
-            font-size: 1.4rem;
-            line-height: 120%;
-
-            color: white;
-
-            .ellipses {
-              img {
-                top: -3.2rem;
-              }
-            }
-
-          }
-        }
-
-        .base-cell {
-          width: 100%;
-
+#container-home {
+  #header-block{
+    .container-sup{
+      &:nth-child(1){
+        background: linear-gradient(116.22deg, #E0784B 0%, #FF7347 22.47%, #E8AB4F 46.94%, #FEA827 69.91%, #FE471B 95.88%);
+        background-size: cover;
+        width:100%;
+        height: 97.9rem;
+      }
+      .content-base{
+        .content-top {
+         
           display: flex;
           align-items: center;
-          justify-content: center;
+    
+          flex-direction: column;
+          width: 100%;
+    
+          #top-header {
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+    
+            
+            margin-top: 8rem;
+    
+            .base-title {
+              display: flex;
+              flex-direction: column;
+              gap: 5.4rem;
+    
+              .title-highlight {
+                h5:first-child {
+                  font-weight: 700;
+                  font-size: 1.6rem;
+                  line-height: 1.9rem;
+    
+                  color: rgba(255, 255, 255, 0.5);
+                }
+    
+                h1 {
+                  font-weight: 600;
+                  font-size: 6rem;
+                  line-height: 7rem;
+                  color: white;
+    
+                  span {
+                    color: #1E1F35;
+                  }
+                }
+    
+                h5 {
+                  font-weight: 400;
+                  font-size: 2rem;
+                  line-height: 2.5rem;
+                  color: white;
+                }
+    
+              }
+    
+              .about-acess {
+                margin-top: 2.4rem;
+              }
+    
+              .info-accept-qty {
+                display: flex;
+    
+                align-items: center;
+                gap: 15rem;
+               
+                height: 7.8rem;
+    
+                font-weight: 700;
+                font-size: 1.4rem;
+                line-height: 120%;
+    
+                color: white;
+    
+               
+                .ellipses {
+                  img {
+                    top: -3.2rem;
+                  }
+                }
+                @media (max-width: 978px){
+                  gap: 18rem;
+  
+                  .ellipses {
+                    img {
+                      top: -4rem;
+                    }
+                  }
+                }
+    
+              }
+            }
+    
+            .base-cell {
+              width: 100%;
+    
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
         }
       }
     }
   }
+ 
+ 
 
   main {
     position: relative;
@@ -99,14 +118,16 @@
     #down-part {
       position: absolute;
       width: 100%;
-      top: -25rem;
-
-      .stamp-container {
+      top: -24rem;
+      
+      @media (max-width:992px){
+        top: -20rem;
+      }
+      .container-sup {
+       
         width: 100%;
-
-
         height: 26.65rem;
-        clip-path: polygon(50% 0, 100% 28%, 100% 100%, 0 100%, 0 28%);
+        clip-path: polygon(50% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
 
         background-color: white;
 
@@ -114,16 +135,14 @@
         align-items: center;
         justify-content: center;
 
-        .content-stamp-img {
-
-          max-width: 124.5rem;
-          width: 100%;
-
+        .content-base {
           display: flex;
           justify-content: space-between;
 
           img {
             margin-top: 5rem;
+            max-width:16rem;
+            width:100%;
           }
         }
 
@@ -176,7 +195,7 @@
           }
 
           .info-relevant-blocks {
-            margin-top: 8rem;
+            margin: 8rem 0;
             width: 100%;
             display: flex;
             justify-content: space-between;
@@ -233,12 +252,22 @@
           display: flex;
           justify-content: space-between;
 
+          img#code-image{
+            max-width: 64.9rem;
+            width:100%;
+            height:100%;
+            
+          }
+
           .description-how-it-works {
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
-            gap: 2.2rem;
+            gap: 5%;
 
+            h1{
+              color:white;
+            }
             span {
               font-weight: 700;
               font-size: 1.8rem;
@@ -315,6 +344,11 @@
             justify-content: space-between;
             flex-wrap: wrap;
             gap:6rem; 
+
+            img{
+              max-width: 22.3rem;
+              width:100%;
+            }
           }
 
           .description.about-integrations{
@@ -331,7 +365,7 @@
               align-items: center;
               gap:2.5rem;
 
-              span:last-child{
+              span.dev{
                 color:var(--orange-500)
               }
             }
@@ -390,6 +424,7 @@
               margin-top:4.6rem;
               display:flex;
               justify-content: space-between;
+              gap:5%;
               
             }
           }
@@ -473,6 +508,7 @@
                 }
                 h1{
                   margin-top:2.2rem;
+                  color:white;
                 }
                 p{
                   margin:1.6rem 0 6.4rem 0;;
@@ -586,7 +622,7 @@
           padding: 4.8rem 0;
           .questions-support{
             h1{
-
+              color:white;
             }
             p{
               margin: 2.3rem 0 3.5rem 0;

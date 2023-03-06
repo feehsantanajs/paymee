@@ -47,49 +47,54 @@ import { FooterContainer } from '../../components/FooterContainer'
 export function Home() {
 
   return (
-    <div id='container'>
+    <div id='container-home'>
+      <div id="header-block">
+        <div className="container-sup">
+          <div className="content-base">
+            <HeaderMenu />
+            <div className='content-top'>
+              <div id="top-header">
+                <div className='base-title'>
+                  <div className='title-highlight'>
+                    <h5>VIVA O PAGAMENTO INSTANTÂNEO</h5>
+                    <h1>O melhor gateway de pagamentos <span>instantâneos</span> do Brasil</h1>
+                    <h5>Comece a vender na internet ou em seu ponto de venda com velocidade, segurança para você conseguir crescer seu negócio</h5>
 
-      <div id="background-top">
-        <div className='content-top'>
-          <HeaderMenu />
-          <div id="top-header">
-            <div className='base-title'>
-              <div className='title-highlight'>
-                <h5>VIVA O PAGAMENTO INSTANTÂNEO</h5>
-                <h1>O melhor gateway de pagamentos <span>instantâneos</span> do Brasil</h1>
-                <h5>Comece a vender na internet ou em seu ponto de venda com velocidade, segurança para você conseguir crescer seu negócio</h5>
+                  </div>
 
-              </div>
+                  <div className='about-acess'>
+                    <ButtonCreateAccount type="blue" />
+                  </div>
 
-              <div className='about-acess'>
-                <ButtonCreateAccount type="blue" />
-              </div>
+                  <div className='info-accept-qty'>
+                    <div className='ellipses'>
+                      <img src={Ellipse1} alt="" />
+                      <img src={Ellipse2} alt="" />
+                      <img src={Ellipse3} alt="" />
+                    </div>
+                    <span>+250.000 pessoas aprovam a PayMee</span>
+                  </div>
 
-              <div className='info-accept-qty'>
-                <div className='ellipses'>
-                  <img src={Ellipse1} alt="" />
-                  <img src={Ellipse2} alt="" />
-                  <img src={Ellipse3} alt="" />
                 </div>
-                <span>+250.000 pessoas aprovam a PayMee</span>
+                <div className="base-cell">
+                  <Smartphone />
+                </div>
               </div>
-
-            </div>
-            <div className="base-cell">
-              <Smartphone />
             </div>
           </div>
         </div>
+
       </div>
+
       <main>
         <div id='down-part'>
-          <div className='stamp-container'>
-            <div className='content-stamp-img'>
-              <img src={Mobbly} alt="" />
-              <img src={Maxmi} alt="" />
-              <img src={ClickBus} alt="" />
-              <img src={Moto} alt="" />
-              <img src={Levis} alt="" />
+          <div className='container-sup'>
+            <div className='content-base'>
+              <img src={Mobbly} alt="Mobbly" />
+              <img src={Maxmi} alt="Maxmi" />
+              <img src={ClickBus} alt="Click Bus" />
+              <img src={Moto} alt="Moto" />
+              <img src={Levis} alt="Levis" />
             </div>
 
           </div>
@@ -97,7 +102,7 @@ export function Home() {
             <div className='content-about-paymee'>
               <div className='description-about'>
                 <h5>Porque a Paymee?</h5>
-                <p>Faça parte da revolução dos pagamentos instantâneos.</p>
+                <h1>Faça parte da revolução dos pagamentos instantâneos.</h1>
                 <span>
                   Oferecemos soluções de pagamento instantâneas para você<br />
                   conseguir elevar seu negócio para outro patamar.
@@ -161,7 +166,7 @@ export function Home() {
           </div>
           <div id="how-it-works">
             <div className='content'>
-              <img src={CodeImg} alt="imagem do codigo" />
+              <img src={CodeImg} alt="imagem do codigo" id="code-image"/>
               <div className='description-how-it-works'>
                 <h5>COMO FUNCIONA</h5>
                 <h1>
@@ -208,14 +213,14 @@ export function Home() {
                     <img src={SquadIcon} alt="Quadrado Icone" />
                     <p> Simples</p>
                     <span>
-                    Oferecemos soluções de pagamento instantâneas para você conseguir elevar seu negócio para outro
+                      Oferecemos soluções de pagamento instantâneas para você conseguir elevar seu negócio para outro
                     </span>
                   </div>
                   <div className="block eccomerce">
                     <img src={BoxIcon} alt="Caixa Icone" />
                     <p>Simples</p>
                     <span>
-                    Oferecemos soluções de pagamento instantâneas para você conseguir elevar seu negócio para outro
+                      Oferecemos soluções de pagamento instantâneas para você conseguir elevar seu negócio para outro
                     </span>
                   </div>
                 </div>
@@ -224,6 +229,7 @@ export function Home() {
 
           </div>
 
+    
           <div id="integrations-apps">
             <div className="content-integrations-apps">
               <div className="brands">
@@ -242,13 +248,13 @@ export function Home() {
                 </p>
                 <div className='interations'>
                   <ButtonCreateAccount type='orange' />
-                  <span>Desenvolvedores ➜</span>
+                  <span className='dev'>Desenvolvedores ➜</span>
                 </div>
-                
+
                 <span className='whatplus'>E muito mais</span>
               </div>
             </div>
-            
+
           </div>
 
           <div id='cases-who-use-recommend'>
@@ -267,9 +273,9 @@ export function Home() {
                 <div className='polygon-content'>
                   <div className='ep-pilote'>
                     <div className='polygon-ep'>
-                   
+
                     </div>
-                    
+
                     <div className='content-ep'>
                       <div className='ellipses'>
                         <img src={Ellipse1} alt="" />
@@ -284,7 +290,7 @@ export function Home() {
                     <h5>Evento virtual</h5>
                     <h1>Assista tudo sobre o futuro da economia da internet.</h1>
                     <p>
-                      A Paymee Sessions, nossa conferência anual, já está disponível para você assistir online. 
+                      A Paymee Sessions, nossa conferência anual, já está disponível para você assistir online.
                       Saiba mais sobre o futuro da economia da internet e conheça os novos produtos da Paymee.
                     </p>
 
@@ -297,14 +303,33 @@ export function Home() {
 
               <div className='container-type-payment'>
                 <div className='content-type-payment'>
-                  <PaymentBlock />
-                  <PaymentBlock />
-                  <PaymentBlock />
+                  <PaymentBlock 
+                    title='Pix Payout'  
+                    info_one='Pagamento instântaneos' 
+                    info_two='Recursos são disponibilizados imediatamente' 
+                    info_three='Menos burocracia e mais agilidade' 
+                    transfer_value='2,00% + 0,39%/Por transferência '
+                  />
+                  <PaymentBlock 
+                    title='Transferência bancária'  
+                    info_one='Transação fácil e rápida' 
+                    info_two='Disponível nos 8 principais bancos' 
+                    info_three='Crédito aparecerá em sua conta imediatamente' 
+                    transfer_value='1,99%/Por transferência '
+                  />
+                  <PaymentBlock 
+                    title='Pix'  
+                    info_one='Pagamento instântaneos' 
+                    info_two='Recursos são disponibilizados imediatamente' 
+                    info_three='Cobrança ocorre apenas no sucesso' 
+                    transfer_value='0,99%/Por transferência '
+                  />
+                  
                 </div>
               </div>
               <div className='info-plus'>
                 <div className='first-part'>
-                  <ButtonCreateAccount type='blue'/>
+                  <ButtonCreateAccount type='blue' />
                   <span>Desenvolvedores ➜</span>
                 </div>
                 <div className='second-part'>
@@ -336,37 +361,37 @@ export function Home() {
 
           <div id="doubts">
             <div className='container about-doubts'>
-                <div className='questions-support'>
-                  <h1>Ficou com alguma dúvida?</h1>
-                  <p>
-                    Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing. 
-                    Indulgence way everything joy alteration boisterous the attachment.
-                  </p>
+              <div className='questions-support'>
+                <h1>Ficou com alguma dúvida?</h1>
+                <p>
+                  Yet bed any for  assistance indulgence unpleasing. Not thoughts all exercise blessing.
+                  Indulgence way everything joy alteration boisterous the attachment.
+                </p>
 
-                  <a href="">Suporte ➜</a>
-                </div>
-                <div className='frequentily-doubts'>
-                  <section>
-                      <h3>Em quanto tempo o dinheiro está disponível na minha conta bancária?</h3> <span>-</span>
-                      <div className='answare'>
-                        <p>
-                        A PayMee realiza o pagamento de suas vendas no dia útil seguinte.
-                        Não é necessário entrar no painel para realizar um saque, nós fazemos o repasse de forma automática  
-                        diretamente na conta bancária pré-cadastrada, já descontando a tarifa.
-                        </p>
-                      </div>
-                     
-                  </section>
-                  <section>
-                    <h3>Are there any additional fee?</h3><span>+</span>
-                  </section>
-                  <section>
+                <a href="">Suporte ➜</a>
+              </div>
+              <div className='frequentily-doubts'>
+                <section>
+                  <h3>Em quanto tempo o dinheiro está disponível na minha conta bancária?</h3> <span>-</span>
+                  <div className='answare'>
+                    <p>
+                      A PayMee realiza o pagamento de suas vendas no dia útil seguinte.
+                      Não é necessário entrar no painel para realizar um saque, nós fazemos o repasse de forma automática
+                      diretamente na conta bancária pré-cadastrada, já descontando a tarifa.
+                    </p>
+                  </div>
+
+                </section>
+                <section>
+                  <h3>Are there any additional fee?</h3><span>+</span>
+                </section>
+                <section>
                   <h3>How can I get the app?</h3><span>+</span>
-                  </section>
-                  <section>
-                    <h3>What features do you offer and other not?</h3><span>+</span>               
-                  </section>
-                </div>
+                </section>
+                <section>
+                  <h3>What features do you offer and other not?</h3><span>+</span>
+                </section>
+              </div>
 
 
             </div>
