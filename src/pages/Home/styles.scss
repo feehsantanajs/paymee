@@ -102,15 +102,18 @@
               display: flex;
               align-items: center;
               justify-content: center;
+              
+              @media (max-width:998px){
+                .blocks-cell{
+                  display:none;
+                }
+              }
             }
           }
         }
       }
     }
   }
- 
- 
-
   main {
     position: relative;
     width: 100%;
@@ -149,7 +152,7 @@
       }
 
       #about-paymee {
-        padding: 0 7.2rem;
+        padding: 6rem 7.2rem;
         padding-top: 2.7rem;
         font-weight: 700;
 
@@ -198,6 +201,7 @@
             margin: 8rem 0;
             width: 100%;
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-between;
 
             .block {
@@ -237,13 +241,14 @@
 
       #how-it-works {
         background: linear-gradient(239.9deg, #1B1C31 31.06%, #2F304A 78.25%);
-
-        height: 50rem;
         display: flex;
         align-items: center;
         justify-content: center;
         width: 100%;
-        padding: 0 7.2rem;
+        padding: 6rem 7.2rem;
+        
+
+       
         .content {
           max-width: 124.5rem;
           width: 100%;
@@ -251,7 +256,12 @@
 
           display: flex;
           justify-content: space-between;
-
+          @media (max-width:425px){
+              justify-content: center;
+              flex-direction: column-reverse;
+              gap:1rem;
+              
+          }
           img#code-image{
             max-width: 64.9rem;
             width:100%;
@@ -279,9 +289,7 @@
       }
 
       #about-way-payment {
-        height: 54rem;
-        
-        padding: 0 7.2rem;
+        padding: 6rem 7.2rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -293,6 +301,9 @@
           max-width: 124.5rem;
           width: 100%;
 
+          @media (max-width:425px){
+            flex-direction: column;
+          }
           .solutions {
             width: 100%;
             display: flex;
@@ -323,21 +334,35 @@
       }
 
       #integrations-apps{
-        height:53.6rem;
+       
         background-color: var(--gray-200);
 
         display:flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 7.2rem;
-
+        padding: 6rem 7.2rem;
         
+        @media (max-width:425px){
+          margin-top:4rem;
+         
+
+          .content-integrations-apps{
+            padding: 2rem 0;
+            justify-content: center;
+            flex-direction: column-reverse;
+
+            .whatplus{
+              display:none;
+            }
+            
+          }
+          
+         }
         .content-integrations-apps{
           width:100%;
-          width:124.5rem;
+          max-width: 124.5rem;
           display:flex;
-          
           gap:13rem;
           .brands{
             display:flex;
@@ -618,8 +643,12 @@
           height:86rem;
           display:flex;
           gap:10.6rem;
-
-          padding: 4.8rem 0;
+          padding: 4.8rem 7.2rem;
+         
+          @media (max-width:425px){
+            flex-direction: column;
+            gap:2rem;
+          }
           .questions-support{
             h1{
               color:white;

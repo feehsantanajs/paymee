@@ -13,6 +13,10 @@ header{
   .menu{
     width:100%;
 
+    img#logo-image{
+      max-width: 13rem;
+      width: 100%;
+    }
     &.support{
       display:flex;
       align-items: center;

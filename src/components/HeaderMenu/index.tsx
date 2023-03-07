@@ -20,7 +20,7 @@ export function HeaderMenu() {
     <header>
       {pathname === '/'
         ?<div className='menu home'>
-            <img src={LogoPaymeeWhite} alt="" />
+            <img src={LogoPaymeeWhite} alt="" id="logo-image" />
 
             <ul>
               <li><a href='#'>Soluções</a></li>
@@ -40,7 +40,7 @@ export function HeaderMenu() {
         : pathname === '/support' 
         ? <div className='menu support'>
             <div className='logo'>
-              <a href="/"><img src={LogoPaymee} alt="" /></a>
+              <a href="/"><img src={LogoPaymee} alt="" id="logo-image"/></a>
               <img src={LogoPaymeeSupport} alt="" />
             </div>
             <div className='access'>
@@ -53,12 +53,12 @@ export function HeaderMenu() {
         
         ? <div className='menu user'>
             <div className='logo'>
-              <a href="/"><img src={LogoPaymee} alt="Paymee" /></a>
+              <a href="/"><img src={LogoPaymee} alt="Paymee"  id="logo-image"/></a>
             </div>
           </div>
 
         : <div className='menu base'>
-            <a href="/"><img src={LogoPaymee} alt="Paymee"/></a>
+            <a href="/"><img src={LogoPaymee} alt="Paymee"  id="logo-image"/></a>
 
             <ul>
               <li><a href='#'>Soluções</a></li>

@@ -80,8 +80,11 @@ export function Home() {
                 </div>
                 <div className="base-cell">
                   <Smartphone />
-                  <SellsDone />
-                  <PixBlock />
+                  <div className='blocks-cell'>
+                    <SellsDone />
+                    <PixBlock />
+                  </div>
+                
                 </div>
               </div>
             </div>

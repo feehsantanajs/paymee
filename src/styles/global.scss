@@ -25,6 +25,7 @@ body{
 
   .container-sup{
     padding: 0 7.2rem;
+    width:100%;
     .content-base{
         width:100%;
         max-width: 124.5rem;  
@@ -34,7 +35,7 @@ body{
 }
 @media screen and (min-width: 998px) and (max-width: 1245px) {
   :root {
-    font-size: 46.87%;
+    font-size:46.87%; 
   }
   
 }
@@ -47,7 +48,7 @@ body{
 
 @media screen and (max-width: 425px) {
   :root {
-    font-size:25%;
+    font-size: 31.25%;
   }
   
 }
