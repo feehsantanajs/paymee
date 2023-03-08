@@ -125,9 +125,20 @@
       
       @media (max-width:992px){
         top: -20rem;
+
       }
+
       .container-sup {
-       
+        @media (max-width:425px){
+          height :auto;
+
+          .content-base{
+            margin-top:6rem;
+            flex-wrap: wrap;
+            gap:4rem;
+          }
+        }
+
         width: 100%;
         height: 26.65rem;
         clip-path: polygon(50% 0, 100% 25%, 100% 100%, 0 100%, 0 25%);
@@ -418,7 +429,8 @@
           align-items: center;
           flex-direction: column;
           padding: 2rem 0;
-          height:180rem;
+        
+          padding: 0 7.2rem;
           
           .container-recommendation{
             
@@ -465,6 +477,13 @@
             justify-content: center;
             align-items: center;
 
+            @media (max-width:425px){
+              height:auto;
+              padding: 20rem 7.2rem;
+              .polygon-content{
+                flex-direction: column;
+              }
+            }
             .polygon-content{
               width:100%;
               max-width: 124.5rem;
@@ -568,6 +587,10 @@
             align-items: center;
             justify-content: center;
             
+            @media (max-width:425px){
+              margin-top:110rem;
+
+            }
             .content-type-payment{
               display:flex;
               justify-content: space-between;
@@ -580,9 +603,8 @@
             width:100%;
             max-width: 124.5rem;
             z-index: 10;
-            height:30rem;
             
-            margin-top: 4.9rem;
+            margin: 5rem 0 ;
 
             .first-part{
               display:flex;
@@ -594,6 +616,16 @@
               display:flex;
               align-items: center;
               gap:14.5rem;
+
+              @media (max-width:425px){
+                gap: 4rem;
+                flex-direction: column;
+                align-items: flex-start;
+
+                .info-extra{
+                  margin-left:4rem;
+                }
+              }
               .banks{
                
                 max-width: 33rem;

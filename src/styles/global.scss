@@ -107,6 +107,11 @@ p.text-page{
     position: absolute;
     
     border-radius: 100%;
+    max-width: 5.6rem;
+    width:100%;
+    @media (max-width:425rem){
+      
+    }
     &:last-child {
       left: 8rem;
     }
