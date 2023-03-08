@@ -23,7 +23,7 @@ export function HeaderMenu() {
             <img src={LogoPaymeeWhite} alt="" id="logo-image" />
 
             <ul>
-              <li><a href='#'>Soluções</a></li>
+              <li><a href='/about'>Soluções</a></li>
               <li><a href='#'>Preços</a></li>
               <li><a href='/support'>Suporte</a></li>
               <li><a href='/contact'>Contato</a></li>
@@ -61,7 +61,7 @@ export function HeaderMenu() {
             <a href="/"><img src={LogoPaymee} alt="Paymee"  id="logo-image"/></a>
 
             <ul>
-              <li><a href='#'>Soluções</a></li>
+              <li><a href='/about'>Soluções</a></li>
               <li><a href='#'>Preços</a></li>
               <li><a href='/support'>Suporte</a></li>
               <li><a href='/contact'>Contato</a></li>

@@ -108,7 +108,7 @@ p.text-page{
 .ellipses {
   position: relative;
  
-  @media screen and (max-width:425px) {
+  @media screen and (max-width:1024px) {
     &.top{
       img{
         max-width: 5em;

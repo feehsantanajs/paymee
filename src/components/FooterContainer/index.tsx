@@ -14,21 +14,21 @@ export function FooterContainer() {
             <img src={LogoPaymee} alt="Logo Paymee" />
             <div className='menu-footer'>
               <ul>
-                <li><a href="/home">Menu Principal</a></li>
+                <li><a href="/">Menu Principal</a></li>
                 <li><a href="/about">Sobre Nós</a></li>
                 <li><a href="/contact">Contato</a></li>
                 <li><a href="/about">Sobre Nós </a></li>
 
               </ul>
               <ul>
-                <li><a href="">Para Compradores</a></li>
-                <li><a href="">Central de Ajuda</a></li>
-                <li><a href="">Canais de atendimento</a></li>
-                <li><a href="">Ouvidoria</a></li>
+                <li><a href="/about">Para Compradores</a></li>
+                <li><a href="/support">Central de Ajuda</a></li>
+                <li><a href="/contact">Canais de atendimento</a></li>
+                <li><a href="/ombudsman">Ouvidoria</a></li>
 
               </ul>
               <ul>
-                <li><a href="#">Para seu negócio</a></li>
+                <li><a href="/media">Para seu negócio</a></li>
                 <li><a href="#">Preços</a></li>
                 <li><a href="/term">Termo de adesão</a></li>
               </ul>

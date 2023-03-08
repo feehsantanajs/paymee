@@ -1,11 +1,13 @@
 #container-home {
-  #whatsapp{
+  #whatsapp-contact{
     background-color:#2EC957;
     position: fixed;
     right:4rem;
+    bottom:4rem;
     padding:2rem;
     border-radius: 100%;
     z-index: 110;
+    
   }
 
   #header-block{
@@ -297,7 +299,7 @@
             margin-top: 1rem;
             display: flex;
             flex-direction: column;
-            gap: 5%;
+            gap: 2rem;
 
             h1{
               color:white;

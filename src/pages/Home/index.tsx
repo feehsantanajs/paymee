@@ -51,7 +51,9 @@ export function Home() {
 
   return (
     <div id='container-home'>
-
+        <div id="whatsapp-contact">
+          <a href="#"><img src={WhatsIcon} alt="WhatsIcon" /></a>
+        </div>
       
       <div id="header-block">
         <div className="container-sup">
@@ -414,9 +416,7 @@ export function Home() {
           <FooterContainer />
         </div>
       </main>
-      <div id="whatsapp">
-        <a href="#"><img src={WhatsIcon} alt="WhatsIcon" /></a>
-      </div>
+      
     </div>
 
   )
