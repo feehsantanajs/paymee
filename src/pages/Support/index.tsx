@@ -83,10 +83,8 @@ export function Support() {
         </div>
 
       </div>
-      <div className='ready'>
-        <ReadyContainer />
-      </div>
-     
+      
+      <ReadyContainer />
       <FooterContainer />
     </div>
 

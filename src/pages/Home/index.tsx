@@ -17,6 +17,7 @@ import BoxIcon from '../../assets/icons/box-icon.svg'
 import ChainIcon from '../../assets/icons/chain-icon.svg'
 import PhoneIcon from '../../assets/icons/phone-icon.svg'
 import SquadIcon from '../../assets/icons/squad-deshed-icon.svg'
+import WhatsIcon from '../../assets/icons/whats-icon.svg'
 
 import ApencartLogo from '../../assets/logo/apencart-logo.svg'
 import BraspagLogo from '../../assets/logo/braspag-logo.svg'
@@ -50,6 +51,8 @@ export function Home() {
 
   return (
     <div id='container-home'>
+
+      
       <div id="header-block">
         <div className="container-sup">
           <div className="content-base">
@@ -69,7 +72,7 @@ export function Home() {
                   </div>
 
                   <div className='info-accept-qty'>
-                    <div className='ellipses'>
+                    <div className='ellipses top'>
                       <img src={Ellipse1} alt="" />
                       <img src={Ellipse2} alt="" />
                       <img src={Ellipse3} alt="" />
@@ -411,6 +414,9 @@ export function Home() {
           <FooterContainer />
         </div>
       </main>
+      <div id="whatsapp">
+        <a href="#"><img src={WhatsIcon} alt="WhatsIcon" /></a>
+      </div>
     </div>
 
   )

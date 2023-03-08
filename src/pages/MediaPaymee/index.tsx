@@ -44,7 +44,6 @@ export function MediaPaymee(){
 
      
       <ReadyContainer />
-
       <FooterContainer />
         
     </div>

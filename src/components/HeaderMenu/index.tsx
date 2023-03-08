@@ -49,7 +49,7 @@ export function HeaderMenu() {
             </div>
           </div>
 
-        : pathname === '/login' || pathname === '/create-user'
+        : pathname === '/login' || pathname === '/create-account'
         
         ? <div className='menu user'>
             <div className='logo'>

@@ -9,7 +9,11 @@
       width:100%;
       max-width: 124.5rem;  
       margin:5.8rem auto;
-
+      @media (max-width:425px){
+        flex-direction: column;
+        align-items:center;
+       
+      }
     .description-about{
       width:100%;
       max-width: 50rem;
@@ -30,7 +34,10 @@
       margin-left:auto;
       max-width: 57.6rem;
       width: 100%;
-    
+      @media (max-width:425px){
+        margin-left: 0;
+        margin-top:2rem;
+      }
       border: 1px solid #E8EAEC;
       border-radius: 20px;
       h3{

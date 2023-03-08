@@ -42,10 +42,11 @@ export function Term() {
 
 
         </div>
-        <div className='content-ready'>
-          <ReadyContainer />
-        </div>
+        
+          
+       
       </div>
+      <ReadyContainer />
       <FooterContainer />
     </div>
 

@@ -124,9 +124,9 @@ export function About() {
             </div>
         </div>
       </div>
-      <div className='content-ready'>
-        <ReadyContainer />
-      </div>
+      
+      <ReadyContainer />
+      
       <FooterContainer />
 
     </div>

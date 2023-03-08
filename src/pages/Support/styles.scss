@@ -6,9 +6,11 @@
  
  
   .questions-support{
-    height:42rem;
+
     padding:8rem  7.2rem;
     background: rgba(253, 243, 240, 0.6); 
+
+  
     .content-quertions-support{
       margin:0 auto;
       max-width:124.5rem;
@@ -66,13 +68,15 @@
        
         width:23.1rem;
         margin-left: auto;
+        margin-top:1rem;  
         padding:1rem;
 
         background-color: #EBEBEB;
         border-radius: 10px;
         span{
-          display: block;
-
+          display: flex;
+          margin-top: 1rem;
+      gap: 1rem;
           &:first-child{
             font-weight: 500;
             font-size: 1.5rem;
@@ -86,7 +90,10 @@
 
   #verifications{
     padding:0 7.2rem;
-
+    @media (max-width:425px){
+      
+      margin-top:6rem;
+    }
     .content-verification{
       width:100%;
       max-width: 124.5rem;

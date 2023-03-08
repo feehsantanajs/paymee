@@ -12,32 +12,35 @@ export function FooterContainer() {
         <div className='top'>
           <div className='menu-block'>
             <img src={LogoPaymee} alt="Logo Paymee" />
-            <ul>
-              <li>Menu Principal</li>
-              <li>Sobre Nós</li>
-              <li>Contato</li>
-              <li>Sobre Nós</li>
+            <div className='menu-footer'>
+              <ul>
+                <li><a href="/home">Menu Principal</a></li>
+                <li><a href="/about">Sobre Nós</a></li>
+                <li><a href="/contact">Contato</a></li>
+                <li><a href="/about">Sobre Nós </a></li>
 
-            </ul>
-            <ul>
-              <li>Para Compradores</li>
-              <li>Central de Ajuda</li>
-              <li>Canais de atendimento</li>
-              <li>Ouvidoria</li>
+              </ul>
+              <ul>
+                <li><a href="">Para Compradores</a></li>
+                <li><a href="">Central de Ajuda</a></li>
+                <li><a href="">Canais de atendimento</a></li>
+                <li><a href="">Ouvidoria</a></li>
 
-            </ul>
-            <ul>
-              <li>Para seu negócio</li>
-              <li>Preços</li>
-              <li>Termo de adesão</li>
-            </ul>
-            <div className='stay-in'>
-              <h2>Fique sempre por dentro.</h2>
-              <div className='input-email-stayin'>
-                <input type='text' placeholder='Seu melhor email' />
-                <img src={AirPlaneIcon} alt="Airplane Icon" />
+              </ul>
+              <ul>
+                <li><a href="#">Para seu negócio</a></li>
+                <li><a href="#">Preços</a></li>
+                <li><a href="/term">Termo de adesão</a></li>
+              </ul>
+              <div className='stay-in'>
+                <h2>Fique sempre por dentro.</h2>
+                <div className='input-email-stayin'>
+                  <input type='text' placeholder='Seu melhor email' />
+                  <img src={AirPlaneIcon} alt="Airplane Icon" />
+                </div>
               </div>
             </div>
+
           </div>
           <div className='social-network'>
             <div className='content-social-network'>

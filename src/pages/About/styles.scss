@@ -73,9 +73,12 @@
 
 
     .brands-about{
-      
       display: flex;
       justify-content: space-between;
+      img{
+        max-width: 13.7rem;;
+        width:100%;
+      }
     }
 
     .history{
@@ -133,12 +136,18 @@
       position:absolute;
       top:-16rem;
       left:0rem;
+
+      @media (max-width:1024px){
+        display:none;
+      }
     }
 
     .about-worth{
       margin: 3rem 7.2rem 0 70rem;
       
-      
+      @media (max-width:1024px){
+        margin:2rem 2rem;
+      }
       .specific-worth{
         
         margin-top: 4rem;

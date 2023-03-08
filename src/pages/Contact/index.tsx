@@ -23,9 +23,8 @@ export function Contact() {
 
         </div>
 
-        <div className='content-ready'>
-          <ReadyContainer />
-        </div>
+        
+        <ReadyContainer />
         <FooterContainer />
       </div>
 

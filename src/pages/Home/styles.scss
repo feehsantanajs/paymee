@@ -1,4 +1,13 @@
 #container-home {
+  #whatsapp{
+    background-color:#2EC957;
+    position: fixed;
+    right:4rem;
+    padding:2rem;
+    border-radius: 100%;
+    z-index: 110;
+  }
+
   #header-block{
     .container-sup{
       &:nth-child(1){
@@ -24,6 +33,10 @@
     
             
             margin-top: 8rem;
+
+            @media (max-width:998px){
+              margin-top: 2rem;
+            }
     
             .base-title {
               display: flex;
@@ -78,7 +91,7 @@
                 color: white;
     
                
-                .ellipses {
+                .ellipses.top {
                   img {
                     top: -3.2rem;
                   }
@@ -635,6 +648,10 @@
                   font-size: 1.5rem;
                   line-height: 5rem;
                 }
+
+                @media (max-width:425px){
+                  max-width:100%;
+                }
                 .banks-content{
                   display: flex;
                   justify-content: space-between;
@@ -741,6 +758,10 @@
         top:-20rem;
         display:flex;
         justify-content: center;
+
+        @media (max-width:425px){
+          top:-10rem;
+        }
       }
     }
   }

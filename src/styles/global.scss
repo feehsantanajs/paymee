@@ -50,6 +50,11 @@ body{
   :root {
     font-size: 31.25%;
   }
+
+  body .container-sup{
+    padding: 0 2rem;
+    
+  }
   
 }
 
@@ -103,15 +108,19 @@ p.text-page{
 .ellipses {
   position: relative;
  
+  @media screen and (max-width:425px) {
+    &.top{
+      img{
+        max-width: 5em;
+      }
+    }
+
+   
+  }
   img {
     position: absolute;
     
     border-radius: 100%;
-    max-width: 5.6rem;
-    width:100%;
-    @media (max-width:425rem){
-      
-    }
     &:last-child {
       left: 8rem;
     }

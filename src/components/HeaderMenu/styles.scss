@@ -17,6 +17,8 @@ header{
       max-width: 13rem;
       width: 100%;
     }
+
+    
     &.support{
       display:flex;
       align-items: center;
@@ -31,7 +33,8 @@ header{
       display:flex;
       align-items: center;
       gap:5%;
-  
+      
+     
       ul{
         display:flex;
         gap:4rem;
@@ -53,13 +56,28 @@ header{
           }
         }
       }
-
+      
+      @media (max-width:425px){
+        gap:2rem;
+        .access{
+          gap:2rem;
+          .button-create-account{
+            padding:1rem 1rem;
+    
+          }
+        }
+      }
+     
       .access{
         margin-left: auto;
         display:flex;
         justify-content: space-between;
         align-items: center;
         gap:4rem;
+        @media (max-width:425px){
+          gap:1rem;
+        }
+       
         .login{
           display:flex;
           align-items: center;
@@ -86,8 +104,15 @@ header{
     
           text-decoration: none;
           color:white;
+
+          @media (max-width:425px){
+            padding: 0.5rem 0 ;
+            max-width: 18rem;
+          }
         }
       }
+      
+     
       
     }
     &.user{
@@ -100,7 +125,9 @@ header{
       display:flex;
       align-items: center;
       gap:20rem;
-  
+      @media (max-width:425px){
+        gap:2rem;
+      }
       ul{
         display:flex;
         gap:4rem;
@@ -127,6 +154,7 @@ header{
       }
       
     }
+
 
     .access{
       margin-left: auto;
