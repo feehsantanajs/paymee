@@ -32,33 +32,8 @@ body{
         margin:0 auto;
     }
   }
-}
-@media screen and (min-width: 998px) and (max-width: 1245px) {
-  :root {
-    font-size:46.87%; 
-  }
+
   
-}
-@media screen and (min-width:425px ) and (max-width: 998px) {
-  :root {
-    font-size: 31.25%;
-  }
-  
-}
-
-@media screen and (max-width: 425px) {
-  :root {
-    font-size: 31.25%;
-  }
-
-  body .container-sup{
-    padding: 0 2rem;
-    
-  }
-  
-}
-
-
 button{
   cursor: pointer;
 }
@@ -114,7 +89,6 @@ p.text-page{
         max-width: 5em;
       }
     }
-
    
   }
   img {
@@ -157,5 +131,32 @@ label{
   font-weight: 500;
   font-size: 1.6rem;
   line-height: 1.8rem;
+}
+
+
+}
+@media screen and (min-width: 998px) and (max-width: 1245px) {
+  :root {
+    font-size:46.87%; 
+  }
+  
+}
+@media screen and (min-width:425px ) and (max-width: 998px) {
+  :root {
+    font-size: 31.25%;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  :root {
+    font-size: 31.25%;
+  }
+
+  body .container-sup{
+    padding: 0 2rem;
+    
+  }
+  
 }
 

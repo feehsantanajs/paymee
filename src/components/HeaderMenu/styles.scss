@@ -106,8 +106,12 @@ header{
           color:white;
 
           @media (max-width:425px){
-            padding: 0.5rem 0 ;
+            padding: 1rem 1rem ;
             max-width: 18rem;
+
+           img{
+            display:none;
+           }
           }
         }
       }

@@ -1,16 +1,19 @@
 .button-create-account{
+  max-width:21.6rem;
+  width:100%;
   padding:1.5rem 4.1rem;
   border-radius:5px;
   text-decoration: none;
   color: white;
-  width:21.6rem;
-  
+
+
   display:flex;
   align-items: center;
   justify-content: center;
   gap:1rem;
   transition: filter 0.25s;
 
+ 
   &:hover{
     filter: brightness(0.75);
     
