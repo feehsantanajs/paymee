@@ -46,9 +46,30 @@ import { FooterContainer } from '../../components/FooterContainer'
 import { SellsDone } from '../../components/SellsDone'
 import { PixBlock } from '../../components/PixBlock'
 
+import { useEffect, useState } from 'react'
+import { BurgerMenu } from '../../components/BurgerMenu'
+
+
+
 
 export function Home() {
 
+
+  const [width, setWidth] = useState<number>(window.innerWidth);
+
+function handleWindowSizeChange() {
+    setWidth(window.innerWidth);
+}
+
+useEffect(() => {
+    window.addEventListener('resize', handleWindowSizeChange);
+    return () => {
+        window.removeEventListener('resize', handleWindowSizeChange);
+    }
+}, []);
+
+const isMobile =  width <= 768;
+  console.log(isMobile)
   return (
     <div id='container-home'>
         <div id="whatsapp-contact">
@@ -57,8 +78,9 @@ export function Home() {
       
       <div id="header-block">
         <div className="container-sup">
+          {isMobile ? <BurgerMenu /> :  <HeaderMenu />}
+         
           <div className="content-base">
-            <HeaderMenu />
             <div className='content-top'>
               <div id="top-header">
                 <div className='base-title'>
