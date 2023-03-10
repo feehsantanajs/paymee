@@ -2,11 +2,15 @@ import './styles.scss'
 import { HeaderMenu } from "../../components/HeaderMenu";
 import { ReadyContainer } from '../../components/ReadyContainer';
 import { FooterContainer } from '../../components/FooterContainer';
+import { BurgerMenu } from '../../components/BurgerMenu';
+import { useContext } from 'react';
+import { AuthContext } from '../../module/hook';
 
 export function PrivacityPolitic() {
+  const {isMobile} =  useContext(AuthContext);
   return (
     <div id="container-politic">
-      <HeaderMenu />
+      {isMobile ? <BurgerMenu /> :  <HeaderMenu />}
 
       <div className="container-sup">
         <div className="content-politic">
@@ -37,14 +41,7 @@ export function PrivacityPolitic() {
 
             </p>
           </div>
-
-
-
-
         </div>
-
-         
-       
       </div>
       <ReadyContainer />
       <FooterContainer />

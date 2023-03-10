@@ -7,10 +7,15 @@ import EmailIcon from '../../assets/icons/email-icon.svg'
 import { FooterContainer } from '../../components/FooterContainer'
 import { HeaderMenu } from '../../components/HeaderMenu'
 import { ReadyContainer } from '../../components/ReadyContainer'
+import { AuthContext } from '../../module/hook'
+import { useContext } from 'react'
+import { BurgerMenu } from '../../components/BurgerMenu'
+
 export function Support() {
+  const {isMobile} =  useContext(AuthContext);
   return (
     <div id='container-support'>
-      <HeaderMenu />
+      {isMobile ? <BurgerMenu /> :  <HeaderMenu />}
       <div className='questions-support'>
         <div className='content-quertions-support'>
           <h2>Suporte</h2>

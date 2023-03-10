@@ -1,12 +1,19 @@
+import { useContext } from "react";
 import { FooterContainer } from "../../components/FooterContainer";
 import { HeaderMenu } from "../../components/HeaderMenu";
 import { News } from "../../components/News";
 import { ReadyContainer } from "../../components/ReadyContainer";
+import { AuthContext } from "../../module/hook";
+import { BurgerMenu } from "../../components/BurgerMenu";
+
+
 import './styles.scss'
+
 export function MediaPaymee(){
+  const {isMobile} =  useContext(AuthContext);
   return(
     <div id="container-media">
-      <HeaderMenu />
+     {isMobile ? <BurgerMenu /> :  <HeaderMenu />}
 
       <div className="container-sup">
         <div className="content-base">

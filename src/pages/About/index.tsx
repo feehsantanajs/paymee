@@ -21,10 +21,15 @@ import CofeeIcon from '../../assets/coffee.svg'
 
 
 import './styles.scss'
+import { AuthContext } from '../../module/hook'
+import { useContext } from 'react'
+import { BurgerMenu } from '../../components/BurgerMenu'
 export function About() {
+
+  const {isMobile} =  useContext(AuthContext);
   return (
     <div id="container-about">
-      <HeaderMenu />
+      {isMobile ? <BurgerMenu /> :  <HeaderMenu />}
 
       <div className='container-sup'>
         <div className='content-about'>

@@ -3,11 +3,16 @@ import { HeaderMenu } from "../../components/HeaderMenu";
 import { ReadyContainer } from '../../components/ReadyContainer';
 import { FooterContainer } from '../../components/FooterContainer';
 import { FormContact } from '../../components/FormContact';
+import { useContext } from 'react';
+import { AuthContext } from '../../module/hook';
+import { BurgerMenu } from '../../components/BurgerMenu';
 
 export function Ombudsman() {
+  const {isMobile} =  useContext(AuthContext);
   return (
     <div id="container-ombusman">
-      <HeaderMenu />
+      
+      {isMobile ? <BurgerMenu /> :  <HeaderMenu />}
 
       <div className="container-sup">
         <div className="content-ombusman">

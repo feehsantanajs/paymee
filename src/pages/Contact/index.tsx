@@ -1,13 +1,18 @@
+import { useContext } from 'react'
 import { FooterContainer } from '../../components/FooterContainer'
 import { FormContact } from '../../components/FormContact'
 import { HeaderMenu } from '../../components/HeaderMenu'
 import { ReadyContainer } from '../../components/ReadyContainer'
+import { AuthContext } from '../../module/hook'
 import './styles.scss'
+import { BurgerMenu } from '../../components/BurgerMenu'
 
 export function Contact() {
+
+  const {isMobile} =  useContext(AuthContext);
   return (
     <div id="container-contact">
-      <HeaderMenu />
+      {isMobile ? <BurgerMenu /> :  <HeaderMenu />}
 
       <div className='container-sup'>
         <div className='content-contact'>

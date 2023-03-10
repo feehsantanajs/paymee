@@ -3,9 +3,19 @@
   align-items: center;
   justify-content: center;
   position: relative;
+ 
+ 
+  img.logo{
+    max-width:12rem;
+    width:100%;
+    margin-left:1rem;
+  }
   .button-bg{
-   
     color:white;
+   
+    &.black-color{
+      color:var(--blue-500);
+    }
   }
   .container-burger{
     display:block;
@@ -17,7 +27,7 @@
     top: -4rem;
     width:100%;
     padding:1rem;
-
+    z-index: 120;
     &.isDesactive{
       display:none;
     }
@@ -60,11 +70,17 @@
       justify-content: center;
       gap:1rem;
       text-decoration: none;
+      &.black-color span{
+        color:var(--blue-500);
+      }
       span{
         font-weight: 500;
         font-size: 1.5rem;
         line-height: 1.8rem;
         color:white;
+       
+        
+      
       }
     }
 
