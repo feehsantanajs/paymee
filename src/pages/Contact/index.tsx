@@ -22,7 +22,6 @@ export function Contact() {
           </div>
 
         </div>
-
         
         <ReadyContainer />
         <FooterContainer />

@@ -16,7 +16,7 @@
         background: linear-gradient(116.22deg, #E0784B 0%, #FF7347 22.47%, #E8AB4F 46.94%, #FEA827 69.91%, #FE471B 95.88%);
         background-size: cover;
         width:100%;
-        height: 97.9rem;
+        
       }
       .content-base{
         .content-top {
@@ -38,6 +38,10 @@
 
             @media (max-width:998px){
               margin-top: 2rem;
+            }
+            @media (max-width:425px){
+              margin-top: 4rem;
+              flex-direction: column;
             }
     
             .base-title {

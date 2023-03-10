@@ -1,4 +1,85 @@
-.bm-burger-button{
+.header-menu-burger{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  .my-menu{
+    padding-top:2rem;
+    margin-top:2rem;
+    background-color: white;
+    height:2rem;
+  }
+  .bm-burger-button {
+   width:5rem;
+   height:5rem;
+  }
   
-  width:8rem;
+  .bm-burger-bars {
+    background: #373a47;
+  }
+  
+  .bm-burger-bars {
+    border:1px solid var(--blue-500);
+  }
+  .bm-burger-bars-hover {
+    background: #a90000;
+  }
+  
+  .bm-cross-button {
+    width:2rem;
+    height:2rem;
+    margin-left: auto;
+  }
+  .bm-overlay {
+  
+  }
+  .bm-cross {
+    background: #bdc3c7;
+  }
+  
+  .bm-item {
+    height:8rem;
+    padding:2rem;
+  
+    font-size: 3rem;
+    font-weight: 2.2rem;
+  
+    text-decoration: none;
+  }
+  
+  
+  .access{
+    margin-left: auto;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:4rem;
+    .login{
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      gap:1rem;
+      text-decoration: none;
+      span{
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color:white;
+      }
+    }
+
+    .button-create-account{
+      border:1px solid white;
+      padding:0.4rem 2.5rem;
+
+      border-radius:5px;
+      -webkit-border-radius:5px;
+      -moz-border-radius:5px;
+      -ms-border-radius:5px;
+      -o-border-radius:5px;
+
+      text-decoration: none;
+      
+    }
+  }
 }
+
