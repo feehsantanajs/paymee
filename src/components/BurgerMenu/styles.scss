@@ -20,18 +20,14 @@
   .bm-burger-bars {
     border:1px solid var(--blue-500);
   }
-  .bm-burger-bars-hover {
-    background: #a90000;
-  }
+  
   
   .bm-cross-button {
     width:2rem;
     height:2rem;
     margin-left: auto;
   }
-  .bm-overlay {
   
-  }
   .bm-cross {
     background: #bdc3c7;
   }
@@ -41,9 +37,11 @@
     padding:2rem;
   
     font-size: 3rem;
-    font-weight: 2.2rem;
+    font-weight:600;
   
     text-decoration: none;
+    color:var(--blue-500);
+    
   }
   
   

@@ -9,7 +9,7 @@ export function BurgerMenu(){
 
     <div className='header-menu-burger'>
     
-         <Menu className={ "my-menu" } width={ '84%' } customBurgerIcon={ <GiHamburgerMenu color='white'/>}>
+         <Menu className={ "my-menu" } width={ '94%' } customBurgerIcon={ <GiHamburgerMenu color='white'/>}>
   
           <a id="home" className="menu-item" href="/">Home</a>
           <a id="support" className="menu-item" href="/support">Suporte</a>
