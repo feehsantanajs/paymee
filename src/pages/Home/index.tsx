@@ -46,30 +46,15 @@ import { FooterContainer } from '../../components/FooterContainer'
 import { SellsDone } from '../../components/SellsDone'
 import { PixBlock } from '../../components/PixBlock'
 
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { BurgerMenu } from '../../components/BurgerMenu'
-
+import { AuthContext } from '../../module/hook'
 
 
 
 export function Home() {
 
-
-  const [width, setWidth] = useState<number>(window.innerWidth);
-
-function handleWindowSizeChange() {
-    setWidth(window.innerWidth);
-}
-
-useEffect(() => {
-    window.addEventListener('resize', handleWindowSizeChange);
-    return () => {
-        window.removeEventListener('resize', handleWindowSizeChange);
-    }
-}, []);
-
-const isMobile =  width <= 768;
-  console.log(isMobile)
+  const {isMobile} =  useContext(AuthContext);
   return (
     <div id='container-home'>
         <div id="whatsapp-contact">
