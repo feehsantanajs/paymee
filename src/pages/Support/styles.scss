@@ -105,7 +105,9 @@
       justify-content: start;
       gap:30rem;
 
-    
+      @media (max-width:425px){
+        gap:6rem;
+      }
 
       .verification{
         margin-bottom:2rem;
