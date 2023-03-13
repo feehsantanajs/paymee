@@ -6,6 +6,8 @@
     display:flex;
     justify-content: space-between;
     
+   
+
     .form-login-getin{
       margin:0 auto;
       max-width: 65.6rem;
@@ -97,6 +99,31 @@
       background: url('../../assets/business-image.png') no-repeat;
       background-repeat: no-repeat;
       background-size: cover;
+
+     
     }
+  }
+}
+
+
+@media only screen and (max-width:425px){
+  #container-login{
+    .content-login{
+      justify-content: center;
+      align-items: center;
+      width:100%;
+      .form-login-getin{
+        max-width: none;
+        width:100%;
+        
+      }
+      
+      .about-login{
+        background:none;
+        max-width: none;
+        width:auto;
+      }
+    }
+    
   }
 }
